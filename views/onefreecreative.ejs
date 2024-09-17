@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head> 
+ 
+
+  <title>One Free Creative- MonkeySingh</title>
+  <meta name="description" content="Our Pricing of offering graphic design services includes - Unlimited Requests, Unlimited Revisions, Fast Turnaround, Committed Professional Designers, Client Assistance & Source Files Included." />
+ 
+  <meta property="og:title" content="One Free Creative - MonkeySingh" />
+  <meta property="og:description" content="Our Pricing of offering graphic design services includes - Unlimited Requests, Unlimited Revisions, Fast Turnaround, Committed Professional Designers, Client Assistance & Source Files Included." />
+  <meta property="og:url" content="https://monkeysingh.com/Pricing/" />
+ 
+</head>
+
+<body>
+<%- include("partials/primaryHeader.ejs") %> 
+  <!-- Pricing section-->
+  <section class="tf-section three_step " style="padding-bottom: 235px;">
+    <div class="overlay"></div>
+    <div class="container"> 
+    </div>
+    </section>
+    <section class="tf-section tf-wallet" data-aos-delay="500" data-aos="fade-up" data-aos-duration="800">
+        <div class="container">
+            <div class="row">   
+                <div class="col-md-12">
+                    <div class="wallet-form">
+                        <h4>Fill the form to get one creative free project</h4>
+                        <p class="sub">We just need a couple of hours! <br>
+                            No more than 2 working days since receiving your issue ticket.</p>
+                        <div class="spacing"></div>
+
+
+                        <% if(msg=="An OTP has been sent to your given mail address." ){ %>
+                        <form action="/trialformotp"  method="post"  class="form-contact">
+                            <div class="project-info-form"> 
+                                <p><%= msg %></p>
+                                
+                                <div class="form-inner">
+                                  
+                                    <fieldset>
+                                        <label >
+                                            Enter OTP Sent to your Email!!
+                                        </label>
+                                        <input  type="number" name="otp" id="otp" placeholder="OTP" required>
+                                    </fieldset>
+                                </div>
+                            </div> 
+    
+                            <div class="wrap-btn">
+                                <button type="submit" style="margin-left: 465px;" class="tf-button style1">
+                                    Submit
+                                </button>
+                            </div>
+                        </form>
+                                    <% }else{ %>
+
+
+
+                        <form action="/trialformdetails"  method="post"  class="form-contact">
+                            <div class="project-info-form">
+                                <h6 class="title">Leave a message</h6>
+                                <p><%= msg %></p>
+                                
+                                <div class="form-inner">
+                                    <fieldset>
+                                        <label >
+                                            Full name
+                                        </label>
+                                        <input type="text" name="name" id="name" placeholder="Full Name" required>
+                                    </fieldset>
+                                    <fieldset>
+                                        <label >
+                                            Email address
+                                        </label>
+                                        <input type="email" name="email" id="email" placeholder="Email" required>
+                                    </fieldset>
+                                    <fieldset>
+                                        <label >
+                                            Phone
+                                        </label>
+                                        <input type="tel" name="phoneNumber" id="phoneNumber"
+                                        placeholder="Telephone Number" required>
+                                    </fieldset>
+                                    <fieldset>
+                                        <label >
+                                            Comapny Name
+                                        </label>
+                                        <input type="text" name="companyName" id="companyName"
+                                        placeholder="Company Name"  required>
+                                    </fieldset>
+                                    <fieldset>
+                                        <label for="message">
+                                            Mesage
+                                        </label>
+                                        <textarea id="message" placeholder="Tell us about the project you wan to launch" rows="5" tabindex="4" name="message" class="message" id="message" required></textarea>
+                                    </fieldset> 
+                                </div>
+                            </div> 
+    
+                            <div class="wrap-btn">
+                                <button type="submit" style="margin-left: 465px;" class="tf-button style1">
+                                    Submit
+                                </button>
+                            </div>
+                        </form>
+                        <% } %>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+  <%- include("partials/footer.ejs") %>
+</body>
+
+</html>

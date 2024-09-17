@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>  
+    <title>Our Work: Graphic Design Portfolio | Designer Work Portfolio - MonkeySingh</title>
+    <meta name="description"
+        content="Check our graphic designing work - Digital Media Content, Book Cover, Facebook Banner, and more. Hire the best graphic design company and let us promote your business!" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Our Work: Graphic Design Portfolio | Designer Work Portfolio - MonkeySingh" />
+ 
+</head>
+
+<body>
+    <%- include("partials/primaryHeader.ejs") %>
+
+        <!-- our work -->
+        <section class="tf-section three_step">
+            <div class="overlay"></div>
+            <div class="container"> 
+            </div>
+            </section>
+            <section class="page-title">
+                <div class="overlay"></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                                <div class="breadcrumbs" data-aos="zoom-in" data-aos-duration="800">
+                                    <h3>Our work </h3>
+                                    <ul>
+                                        <li>
+                                            <a href="/">Home</a>
+                                        </li>
+                                        <li>
+                                            <span class="icon">
+                                                <svg width="5" height="9" viewBox="0 0 5 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M0.9375 1.375L4.0625 4.5L0.9375 7.625" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </span>
+                                            <span> Our work</span>
+                                        </li>
+                                    </ul>
+                                </div>            
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="tf-section tf-blog pt60">
+                <div class="container">
+                    <div class="row">                 
+                        <article class="article">
+                            <div class="connect-wallet">
+                                <h6 class="widget-title-st2">
+                                    Categories
+                                </h6>
+                            </div>    
+                            <div class="twothirds vertical-tabs">
+                                <div class="checklist-wrap">
+                                  <div class="contextNav onethird">
+                                    <ul class="checklist-select" role="tablist">
+                                        <li  class="<% if(category=='Books'){ %> active <% } %>" >
+                                            <a  href="/our-work/Books" id="Books">Books</a>
+                                        </li>
+                                        <li class="<% if(category=='Logo'){ %> active <% } %>">
+                                            <a  href="/our-work/Logo" id="Logo">Logo</a>
+                                        </li>
+                                        <li class="<% if(category=='App-Development'){ %> active <% } %>">
+                                            <a href="/our-work/App-Development" id="App-Development">App-Development</a>
+                                        </li>
+                                        <li class="<% if(category=='Newspaper-Ad'){ %> active <% } %>">
+                                            <a  href="/our-work/Newspaper-Ad" id="Newspaper-Ad">Newspaper-Ad</a>
+                                        </li>
+                                        <li class="<% if(category=='Typography'){ %> active <% } %>">
+                                            <a   href="/our-work/Typography" id="Typography">Typography</a>
+                                        </li>
+                                        <li class="<% if(category=='Web-Design'){ %> active <% } %>">
+                                            <a  href="/our-work/Web-Design" id="Web-Design">Web-Design</a>
+                                        </li>
+                                        <li class="<% if(category=='T-Shirt'){ %> active <% } %>">
+                                            <a   href="/our-work/T-Shirt" id="T-Shirt">T-Shirt</a>
+                                        </li>
+                                        <li class="<% if(category=='Banner'){ %> active <% } %>">
+                                            <a  href="/our-work/Banner" id="Banner">Banner</a>
+                                        </li>
+                                        <li class="<% if(category=='Promotional'){ %> active <% } %>">
+                                            <a   href="/our-work/Promotional" id="Promotional">Promotional</a>
+                                        </li>
+                                        <li class="<% if(category=='Packaging'){ %> active <% } %>">
+                                            <a  href="/our-work/Packaging" id="Packaging">Packaging</a>
+                                        </li>
+    
+                                        <li class="<% if(category=='Social-Media'){ %> active <% } %>">
+                                            <a  href="/our-work/Social-Media" id="Social-Media">Social-Media</a>
+                                        </li>
+    
+                                        <li class="<% if(category=='Digital-Ads'){ %> active <% } %>">
+                                            <a  href="/our-work/Digital-Ads" id="Digital-Ads">Digital-Ads</a>
+                                        </li>
+    
+    
+                                        <li class="<% if(category=='Motion-Video'){ %> active <% } %>">
+                                            <a href="/our-work/Motion-Video" id="Motion-Video">Motion-Video</a>
+                                        </li>
+                                    </ul>
+                                  </div> <!-- end contextNav -->
+                                </div>
+                              </div> 
+
+                     
+                         
+                      
+                        </article>
+                        <div class="side-bar">
+                            <div class="row">
+                                <% workArray.forEach( work=> { %>
+                                    <% if(work.category=="Motion-Video" ){ %>
+
+                            <div class="col-lg-4 col-md-12">
+                                <div class="grid-box">
+                                    <div class="image">
+                                        <img src="<%= work.image %>"  alt="">
+
+                                        <video  width="320" height="240" autoplay muted controls>
+                                            <source src="<%= work.image %>"  type="video/mp4"> 
+                                          </video>
+                                        
+                                    </div>
+                                    <!-- <div class="content">
+                                        <h5 class="title"><%= work.category %></h5>
+                                        <p><%= work?.title %></p>
+                                    </div> -->
+                                  
+                                </div>
+                            </div>
+                            <% }else{ %>
+                            <div class="col-lg-4 col-md-12">
+                                <div class="grid-box">
+                                    <div class="image">
+                                        <img src="<%= work.image %>" alt="">
+                                    </div>
+                                    <!-- <div class="content">
+                                        <h5 class="title"><%= work.category %></h5>
+                                        <p><%= work?.title %></p>
+                                    </div> -->
+                                  
+                                </div>
+                            </div>
+
+                            <% }}); %>
+                            
+                        </div>
+
+                        </div> 
+                    </div>
+                </div>
+            </section>
+
+        <%- include("partials/footer.ejs") %>
+</body>
+
+</html>

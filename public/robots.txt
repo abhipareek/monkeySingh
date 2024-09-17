@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /forgotpassword
+Disallow: /forgotusername
+
+Sitemap: https://www.monkeysingh.com/sitemap.xml

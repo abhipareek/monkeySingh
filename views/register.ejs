@@ -1,0 +1,80 @@
+<%- include("partials/primaryHeader.ejs") %>
+<div class="inner-page login-page">
+<section class="page-title">
+    <div class="overlay"></div> 
+</section>
+<section class="tf-section project-info">
+    <div class="container"> 
+        <div class="row">
+            <div class="col-md-12">
+                <form action="/register" method="post">
+                    <div class="project-info-form form-login style2">
+                        <h6 class="title">Register</h6>
+                        <h6 class="title show-mobie"><a href="/login">Login</a></h6>
+                        <h6 class="title link"><a href="/login">Login</a></h6>
+                        <p>Create an Account!</p>
+                        <div class="form-inner"> 
+                            <fieldset>
+                                <label>
+                                    First Name *
+                                </label>
+                                <input type="text" placeholder="First Name" name="firstName" required>
+                            </fieldset>
+                            <fieldset>
+                                <label>
+                                    Last Name *
+                                </label>
+                                <input type="text" placeholder="Last Name" name="lastName" required>
+                            </fieldset> 
+                            <fieldset>
+                                <label>
+                                    Email address *
+                                </label>
+                                <input type="email" placeholder="Your email" name="email" required>
+                            </fieldset>
+                            <fieldset>
+                                <label>
+                                    Username *
+                                </label>
+                                <input type="text" placeholder="Username" name="username" required>
+                            </fieldset>
+                            <fieldset>
+                                <label>
+                                    Password *
+                                </label>
+                                <input type="password" name="password" id="password"
+                                placeholder="******************"   required>
+                            </fieldset> 
+                           
+                            <fieldset class="checkbox"> 
+                                <input type="checkbox"  onclick="togglePasswordVisibility()" id="checkbox" name="checkbox" >
+                                <label for="checkbox" class="icon"></label>
+                                <label for="checkbox">
+                                    Show Password
+                                </label>
+                            </fieldset>
+                            <script>
+                                function togglePasswordVisibility() {
+                                    var x = document.getElementById("password");
+                                    if (x.type === "password") {
+                                        x.type = "text";
+                                    } else {
+                                        x.type = "password";
+                                    }
+                                }
+                            </script>
+                        </div>
+                    </div> 
+
+                    <div class="wrap-btn">
+                        <button type="submit" class="tf-button style2">
+                            Register Account
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+</div>
+<%- include("partials/footer.ejs") %>

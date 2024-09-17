@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   
+    <meta name="description" content="<%= blogPost.metaDescription %>">
+    <title>
+        <%= blogPost.title%> - Monkeysingh
+    </title>
+</head>
+
+<body>
+    <%- include("partials/primaryHeader.ejs") %>
+        <!-- component -->
+
+        <section class="tf-section three_step">
+            <div class="overlay"></div>
+            <div class="container">
+            </div>
+            </section>
+
+        <section class="page-title">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                            <div class="breadcrumbs" data-aos="zoom-in" data-aos-duration="800">
+                                <h3>Blog Detail</h3>
+                                <ul>
+                                    <li>
+                                        <a href="/">Home</a>
+                                    </li>
+                                    <li>
+                                        <span class="icon">
+                                            <svg width="5" height="9" viewBox="0 0 5 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M0.9375 1.375L4.0625 4.5L0.9375 7.625" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </span>
+                                        <span>Blog Detail</span>
+                                    </li>
+                                </ul>
+                            </div>            
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <section class="tf-section tf-blog pt60">
+            <div class="container">
+                <div class="row"> 
+                    <div class="side-bar">
+                        <div class="post-details">
+                            <h4 class="title"><%= blogPost.title%></h4>
+                            <p class="date mb18"> 
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g opacity="0.5">
+                                    <path d="M4.5 2V3.5M11.5 2V3.5M2 12.5V5C2 4.60218 2.15804 4.22064 2.43934 3.93934C2.72064 3.65804 3.10218 3.5 3.5 3.5H12.5C12.8978 3.5 13.2794 3.65804 13.5607 3.93934C13.842 4.22064 14 4.60218 14 5V12.5M2 12.5C2 12.8978 2.15804 13.2794 2.43934 13.5607C2.72064 13.842 3.10218 14 3.5 14H12.5C12.8978 14 13.2794 13.842 13.5607 13.5607C13.842 13.2794 14 12.8978 14 12.5M2 12.5V7.5C2 7.10218 2.15804 6.72064 2.43934 6.43934C2.72064 6.15804 3.10218 6 3.5 6H12.5C12.8978 6 13.2794 6.15804 13.5607 6.43934C13.842 6.72064 14 7.10218 14 7.5V12.5" stroke="#798DA3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </g>
+                                </svg> 
+                                <%=blogPost.date%></p>
+                            <div class="spacing"></div>
+                            <div class="content-inner">
+                                <ul class="social">
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M3.07969 9.04002C3.01969 9.04002 1.69969 9.04002 1.09969 9.04002C0.779688 9.04002 0.679688 8.92002 0.679688 8.62002C0.679688 7.82002 0.679688 7.00002 0.679688 6.20002C0.679688 5.88002 0.799688 5.78002 1.09969 5.78002H3.07969C3.07969 5.72002 3.07969 4.56002 3.07969 4.02002C3.07969 3.22002 3.21969 2.46002 3.61969 1.76002C4.03969 1.04002 4.63969 0.560019 5.39969 0.280019C5.89969 0.100019 6.39969 0.0200195 6.93969 0.0200195H8.89969C9.17969 0.0200195 9.29969 0.14002 9.29969 0.42002V2.70002C9.29969 2.98002 9.17969 3.10002 8.89969 3.10002C8.35969 3.10002 7.81969 3.10002 7.27969 3.12002C6.73969 3.12002 6.45969 3.38002 6.45969 3.94002C6.43969 4.54002 6.45969 5.12002 6.45969 5.74002H8.77969C9.09969 5.74002 9.21969 5.86002 9.21969 6.18002V8.60002C9.21969 8.92002 9.11969 9.02002 8.77969 9.02002C8.05969 9.02002 6.51969 9.02002 6.45969 9.02002V15.54C6.45969 15.88 6.35969 16 5.99969 16C5.15969 16 4.33969 16 3.49969 16C3.19969 16 3.07969 15.88 3.07969 15.58C3.07969 13.48 3.07969 9.10002 3.07969 9.04002Z" fill="#798DA3"/>
+                                                </svg> 
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M14 1.42062C13.4794 1.66154 12.9246 1.82123 12.3462 1.89877C12.9412 1.524 13.3954 0.935077 13.6089 0.225231C13.0541 0.574154 12.4416 0.820615 11.7889 0.958154C11.2621 0.366462 10.5114 0 9.69238 0C8.10337 0 6.82412 1.36062 6.82412 3.02862C6.82412 3.26862 6.84338 3.49938 6.89062 3.71908C4.5045 3.59631 2.39313 2.38985 0.97475 0.552C0.727125 1.00523 0.581875 1.524 0.581875 2.08246C0.581875 3.13108 1.09375 4.06062 1.85675 4.59877C1.39562 4.58954 0.94325 4.44831 0.56 4.22585C0.56 4.23508 0.56 4.24708 0.56 4.25908C0.56 5.73046 1.55487 6.95262 2.8595 7.23415C2.62587 7.30154 2.37125 7.33385 2.107 7.33385C1.92325 7.33385 1.73775 7.32277 1.56362 7.28215C1.9355 8.48123 2.99075 9.36277 4.2455 9.39138C3.269 10.1972 2.02912 10.6828 0.686875 10.6828C0.4515 10.6828 0.22575 10.6717 0 10.6412C1.27137 11.5062 2.77813 12 4.403 12C9.6845 12 12.572 7.38462 12.572 3.384C12.572 3.25015 12.5676 3.12092 12.5615 2.99262C13.1311 2.56615 13.6097 2.03354 14 1.42062Z" fill="#798DA3"/>
+                                                </svg> 
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M14.0006 14.0002V8.87273C14.0006 6.35273 13.4581 4.42773 10.5181 4.42773C9.10062 4.42773 8.15563 5.19773 7.77063 5.93273H7.73563V4.65523H4.95312V14.0002H7.85813V9.36273C7.85813 8.13773 8.08563 6.96523 9.59063 6.96523C11.0781 6.96523 11.0956 8.34773 11.0956 9.43273V13.9827H14.0006V14.0002Z" fill="#798DA3"/>
+                                                <path d="M0.226562 4.65479H3.13156V13.9998H0.226562V4.65479Z" fill="#798DA3"/>
+                                                <path d="M1.68 0C0.7525 0 0 0.7525 0 1.68C0 2.6075 0.7525 3.3775 1.68 3.3775C2.6075 3.3775 3.36 2.6075 3.36 1.68C3.36 0.7525 2.6075 0 1.68 0Z" fill="#798DA3"/>
+                                                </svg> 
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="content-post">
+                                    <% let imageURL=blogPost.image+"?tr=w-1200,bl-6" %>
+                                       
+                                    <div class="image">
+                                        <img src="<%= imageURL %>" alt="">
+                                         
+                                    </div>
+
+                                    <%- blogPost.description %>
+                                </div> 
+                            </div>
+                            <!-- <div class="related-post">
+                                <h4 class="title">Related post</h4>
+                                <div class="wrapper-related-post">
+                                    <div class="grid-box">
+                                        <div class="image">
+                                            <img src="assets/images/post/post_26.png" alt="">
+                                        </div>
+                                        <div class="content">
+                                            <a href="blog-details.html#" class="tag">Metaverse</a>
+                                            <h5 class="title"><a href="blog-details.html#">Tapping the Metaverse for...</a></h5>
+                                            <p>The metaverse can help the healthcare fraternity by providing trainings on...</p>
+                                        </div>
+                                        <a href="blog-details.html#" class="tf-button style1">
+                                          Read more
+                                        </a>
+                                    </div>
+                                    <div class="grid-box">
+                                        <div class="image">
+                                            <img src="assets/images/post/post_27.png" alt="">
+                                        </div>
+                                        <div class="content">
+                                            <a href="blog-details.html#" class="tag">Metaverse</a>
+                                            <h5 class="title"><a href="blog-details.html#">People still don't know what metaverse is...</a></h5>
+                                            <p>The metaverse can help the healthcare fraternity by providing trainings on...</p>
+                                        </div>
+                                        <a href="blog-details.html#" class="tf-button style1">
+                                          Read more
+                                        </a>
+                                    </div>
+                                    <div class="grid-box">
+                                        <div class="image">
+                                            <img src="assets/images/post/post_28.png" alt="">
+                                        </div>
+                                        <div class="content">
+                                            <a href="blog-details.html#" class="tag">Metaverse</a>
+                                            <h5 class="title"><a href="blog-details.html#">Microsoft brings animated avatars to ...</a></h5>
+                                            <p>The metaverse can help the healthcare fraternity by providing trainings on...</p>
+                                        </div>
+                                        <a href="blog-details.html#" class="tf-button style1">
+                                          Read more
+                                        </a>
+                                    </div>
+                                </div>
+                            </div> -->
+                          
+                           
+    
+                        </div>
+                    </div> 
+                    <article class="article">
+                        <!-- <div class="widget">
+                            <h6 class="widget-title-st2">
+                                Categories
+                            </h6>
+                            <ul class="widget-category">
+                                <li>
+                                    <a href="blog-list.html">Metaverse <span>(18)</span></a>
+                                </li>
+                                <li>
+                                    <a href="blog-list.html">Web 3.0 <span>(57)</span></a>
+                                </li>
+                                <li>
+                                    <a href="blog-list.html">Farming <span>(5)</span></a>
+                                </li>
+                                <li>
+                                    <a href="blog-list.html">IGOs <span>(9)</span></a>
+                                </li>
+                                <li>
+                                    <a href="blog-list.html">Launchpad <span>(3)</span></a>
+                                </li>
+                                <li>
+                                    <a href="blog-list.html">Staking <span>(81)</span></a>
+                                </li>
+                                <li>
+                                    <a href="blog-list.html">Crypto Trade <span>(42)</span></a>
+                                </li>
+                            </ul>
+                        </div> -->
+    
+                        <div class="widget mb33">
+                            <h6 class="widget-title-st2">
+                                Recent Posts
+                            </h6>
+                            <ul class="widget-recenpost">
+                               
+                                    <% blogPostArray.forEach(blog=> { %>
+                    
+                                          <li>
+                                              <div class="recent-posts">
+                                                  <div class="image">
+                                                      <img src="<%=blog.image%>" alt="">
+                                                  </div>
+                                                  <div class="content">
+                                                      <a href="'/blogs/<%=blog.urlTitle%>'" class="date">
+                                                          <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                              <path d="M2.9375 1.25V2.5625M9.0625 1.25V2.5625M0.75 10.4375V3.875C0.75 3.5269 0.888281 3.19306 1.13442 2.94692C1.38056 2.70078 1.7144 2.5625 2.0625 2.5625H9.9375C10.2856 2.5625 10.6194 2.70078 10.8656 2.94692C11.1117 3.19306 11.25 3.5269 11.25 3.875V10.4375M0.75 10.4375C0.75 10.7856 0.888281 11.1194 1.13442 11.3656C1.38056 11.6117 1.7144 11.75 2.0625 11.75H9.9375C10.2856 11.75 10.6194 11.6117 10.8656 11.3656C11.1117 11.1194 11.25 10.7856 11.25 10.4375M0.75 10.4375V6.0625C0.75 5.7144 0.888281 5.38056 1.13442 5.13442C1.38056 4.88828 1.7144 4.75 2.0625 4.75H9.9375C10.2856 4.75 10.6194 4.88828 10.8656 5.13442C11.1117 5.38056 11.25 5.7144 11.25 6.0625V10.4375" stroke="#798DA3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                              </svg>                                                
+                                                          <span><%=blog.date%> </span>
+                                                      </a>
+                                                      <a href="'/blogs/<%=blog.urlTitle%>'" class="title"><%= blog.title%></a>
+                                                  </div>
+                                              </div>
+                                          </li>
+                                <% }) %>
+                                
+                            </ul>
+                        </div>
+    
+                        <div class="widget mb22">
+                            <h6 class="widget-title-st2">
+                                Popular Tags
+                            </h6>
+                            <ul class="widget-tag mr-10">
+                                <li> 
+                                    <a href="javascript:void(0)">Cover Art</a>
+                                </li> 
+                                <li> 
+                                    <a href="javascript:void(0)">Content Writing</a>
+                                </li> 
+                                <li> 
+                                    <a href="javascript:void(0)">Animated Logos</a>
+                                </li> 
+                                <li> 
+                                    <a href="javascript:void(0)">Advertising</a>
+                                </li> 
+                                <li> 
+                                    <a href="javascript:void(0)">Channel Marketing</a>
+                                </li> 
+                                <li> 
+                                    <a href="javascript:void(0)">Food Industry</a>
+                                </li> 
+                                <li> 
+                                    <a href="javascript:void(0)">Graphic Design</a>
+                                </li> 
+                            </ul>
+                        </div>
+    
+                      
+                    </article>
+                </div>
+            </div>
+        </section>
+
+
+
+      
+       
+            <%- include("partials/footer.ejs") %>
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+<%- include("partials/primaryHeader.ejs") %>
+<div class="inner-page login-page">
+<section class="page-title">
+    <div class="overlay"></div> 
+</section>
+
+<section class="tf-section project-info">
+<div class="container"> 
+    <div class="row">
+        <div class="col-md-12">
+            <form  action="/login" method="post"
+            name="loginForm" onsubmit="validateLoginForm()" >
+                <div class="project-info-form form-login">
+                    <h6 class="title">Login</h6>
+                    <h6 class="title show-mobie"><a href="/register">Register</a></h6>
+                    <h6 class="title link"><a href="/register">Register</a></h6>                   
+                    <% if(err){ %>
+                        <div class="text-center my-2">
+                            <p style="color: red;" class="text-red-500 text-sm align-baseline">
+                                <%= err %>
+                            </p>
+                        </div>
+                        <% }else{ %>
+                            <p>Enter your credentials to access your account</p>
+                        <%  } %>
+
+                    <div class="form-inner"> 
+                        <fieldset>
+                            <label>
+                                Username *
+                            </label>
+                            <input type="text"  name="username" placeholder="Username"   required>
+                        </fieldset>
+                        <fieldset>
+                            <label>
+                                Password *
+                            </label>
+                            <input type="password" name="password"
+                            placeholder="******************" placeholder="Your password" required>
+                        </fieldset> 
+                        
+                    </div>
+                    <a   href="/forgotpassword" class="fogot-pass password">Fogot password?</a>
+                    <a   href="/forgotusername" class="fogot-pass">  Forgot Username?</a>
+                </div> 
+
+                <div class="wrap-btn">
+                    <button type="submit" class="tf-button style2">
+                        Login
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+</section>
+</div>
+<%- include("partials/footer.ejs") %>
+<script>
+    function validateLoginForm() {
+        let username = document.forms["loginForm"]["username"].value
+        let password = document.forms["loginForm"]["password"].value
+        if (username.length == 0) {
+            document.getElementsByClassName("blankUsernameAlert").css.display = "block";
+            return false;
+        }
+        else if (password.length == 0) {
+            document.getElementsByClassName("blankPasswordAlert").css.display = "block";
+            return false;
+        }
+    }
+</script>

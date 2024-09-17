@@ -1,0 +1,2442 @@
+{
+	"info": {
+		"_postman_id": "1ee2f304-2d70-43bd-bd3e-735042fcbfc2",
+		"name": "monkey singh",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5268631"
+	},
+	"item": [
+		{
+			"name": "blog",
+			"item": [
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "ws1WQAMwap4tPJQFEHo0"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"tital\": \"demo 1\",\n    \"category\": \"actioin\",\n    \"author\": \"dheeraj\",\n    \"date\": \"12/10/2023\",\n    \"image\":\"http://shasbfsf/afscb\",\n    \"description\": \"type of action blog\",\n    \"meta_description\": \"actio\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8888/api/v1/app/blog/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8888",
+							"path": [
+								"api",
+								"v1",
+								"app",
+								"blog",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteblog",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "ws1WQAMwap4tPJQFEHo0"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"blog_id\":\"63106a2266ab41bfdb21896c\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8888/api/v1/app/blog/deleteblog",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8888",
+							"path": [
+								"api",
+								"v1",
+								"app",
+								"blog",
+								"deleteblog"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get blog by id",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "ws1WQAMwap4tPJQFEHo0"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"blog_id\":\"63106a2266ab41bfdb21896c\"\n}"
+								},
+								"url": {
+									"raw": "http://localhost:8888/api/v1/app/blog/getBlogById",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8888",
+									"path": [
+										"api",
+										"v1",
+										"app",
+										"blog",
+										"getBlogById"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "5702"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1646-2z2DibrTVuJNgx6X32cW5cQWigU\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 20 Mar 2023 18:58:35 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 200,\n    \"data\": {\n        \"author\": \"\",\n        \"title\": \"Tips For Podcast Cover Art\",\n        \"category\": \"\",\n        \"description\": \"<p>Podcasts are almost incomplete information. You build a close connection with your audience by whispering in their ears for an hour. But before your words reach the ears of your listeners, there is one area where visibility is most important: your podcast cover art.<br />Your podcast cover is the first thing your audience will see when they search for it on their phones. It is a first impression of your podcast and what you are trying to say. Most importantly, good podcast cover art is one of the requirements for a podcast embedded in iTunes.</p> <p>&nbsp;</p> <p><strong>How do can design the best podcast cover art?</strong></p> <p><br />Making podcast art sounds scary, but it shouldn&rsquo;t be! With the help of <a href=\\\"https://www.monkeysingh.com/\\\">graphic design companies in india</a>, some examples of inspiring podcast cover art, as well as a little art you can do.</p> <p>&nbsp;</p> <p><strong>Let your product speak</strong></p> <p><br />If this is a podcast created as part of a product marketing effort, you already have the type to build on. But if it's your personal podcast, you can still work on tagging it. Either way, think of the big picture. How do you want your podcast to be seen by your audience? Do you have a product personality designed for your show? These are the details that set your show apart even if there are many similar shows in your niche.</p> <p><br />A podcast cover that reflects the personality of your product could be a creative variation of your logo or perhaps use a mascot that you use in your logo in a fun way. Remember to use the same images regularly in your ads and on social media channels. As did Headspace with its Radio Headspace podcast.</p> <p>&nbsp;</p> <p><strong>Get Your Great Podcast Art Right</strong></p> <p><br />Size DOES matter. Before you get into the nitty-gritty design of your logo, make sure you understand your podcast artwork you must follow certain basic requirements in terms of size to be accepted in all major podcast text lists.</p> <p><br />For all the major podcast references, Apple Podcasts has strong requirements, however, fortunately, many other platforms have similar needs.</p> <p>&nbsp;</p> <p><strong>See Competition</strong></p> <p><br />If you lack the inspiration for your podcast cover art, a great way to make your creative juices flow by looking at what your competitors and peers are doing.</p> <p><br />For example, if your podcast is focused on reading, why not try selecting the Apple Podcasts 'Education' section to see what is already on the list? Or click on the 'What's Hot' section of 'education' and think about why those particular podcasts stand out from the crowd.</p> <p>&nbsp;</p> <p><strong>Learn the language of the target audience</strong></p> <p><br />We are not speaking a human language here but a visual language. What you tell someone does not really matter if that person does not understand your language well? Similarly, the design of an amazing podcast cover will not work if you ignore the preferences of your audience. But how do you know if your target audience will like it? Public listening is the voice spoken here. Watch the conversations they have. Content they share.</p> <p><br />This is why experts continue to talk about the need for a good niche for your podcast. If you have a clear niche, it is easy to understand your target audience. And if you understand your intended audience, you know how they can pay attention to you. This also helps you understand the type of design that works best on your podcast cover.</p> <p>&nbsp;</p> <p><strong>Cut out the visible clutter</strong></p> <p><br />Because you have one image that will represent the entire episode you post, do not try to squeeze too many things into your podcast cover. Having a confusing cover is worse than having an unrelated stock image as part of the cover art of your podcast.</p> <p><br />Build on a simple concept and create a straightforward design. That is a way to win the hearts of your listeners. A small cover with a good message will also be a way to show your audience how you like to keep things organized. So they will know that your podcast will convey many important details in a short amount of time.</p> <p>&nbsp;</p> <p><strong>Avoid overused podcasting images</strong></p> <p><br />Unless your podcast is about the podcast category, do not use microphone images and pop filters. Podcasting is the media you use &mdash; it is not the story of your show. Adding headphones to your artwork is like putting DVDs and cameras on a movie poster.</p> <p>&nbsp;</p> <p><strong>Use the same marker</strong></p> <p><br />Apple, Coca-Cola, and Nike are all experts in branding because they use consistent images throughout their forums. Use the same colors, fonts, and images in your podcast artwork that you use on your website and social media.</p> <p>Your name and podcast cover art, work together harmoniously<br />The full podcast logo includes a host of things aimed at one goal: to tell the audience who you are, and why they should listen to you. It can be hard work, especially as many podcasts start out as love projects. They will be personal and close.</p> <p><br />But that does not mean that you should walk alone. Graphic design companies in india can take your style and tone, and create a podcast cover that conveys that feeling across all forums.</p>\",\n        \"date\": \"2022-08-30\",\n        \"image\": \"https://ik.imagekit.io/gzmznzzqlrz/blogpageImages/Untitled-design-4-Edited_wCwcOC4Sx.png?ik-sdk-version=javascript-1.4.3&updatedAt=1662019949252\",\n        \"metaDescription\": \"2022-08-30\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "getBlogs",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "ws1WQAMwap4tPJQFEHo0"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"limit\":5,\n    \"sikp\":0\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8888/api/v1/app/blog/getBlogs",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8888",
+							"path": [
+								"api",
+								"v1",
+								"app",
+								"blog",
+								"getBlogs"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "getBlogs",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "ws1WQAMwap4tPJQFEHo0"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"limit\":5,\n    \"sikp\":0\n}"
+								},
+								"url": {
+									"raw": "http://localhost:8888/api/v1/app/blog/getBlogs",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8888",
+									"path": [
+										"api",
+										"v1",
+										"app",
+										"blog",
+										"getBlogs"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "17583"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"44af-KRkCYovKQLg8ZB+VKb7adqUBsc4\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 20 Mar 2023 19:07:04 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 200,\n    \"data\": [\n        {\n            \"title\": \"How Hiring a Graphic Design Company is value for money\",\n            \"description\": \"Whether you have just started building a profitable business or you are a large organization, you need to brand your business. And for a successful branding campaign, you need high-quality graphic design solutions. It leads to the old controversy over building a home design team or going with a graphic designing agency. Remember that having with a graphic designing agency. Remember that having a graphic design agency at beck and call will have many benefits. Learn how it guarantees more bang for less.</p>\\n<p><strong> </strong></p>\\n<p><strong>Graphic Design Agency: Is It the Right Decision for Your Business?</strong></p>\\n<p>When it comes to making a decision between a home graphic design team or working with a design agency, you need to consider different aspects. Only with a detailed analysis of the features, you will be able to make a profitable business decision.</p>\\n<ol>\\n<li><strong> Business Principles</strong></li>\\n</ol>\\n<p>It is important that you set goals for your business and make a decision. Will you expand to more places in the near future? Will you be launching new products soon? If you are always in need of new photo designs, you may want to consider hiring a home design team. However, it is not always possible to find the right employees right away. It is best to use a graphic Designing company services. With a company dedicated to providing your 1,000th design needs, you will be able to focus on other important things.</p>\\n<ol start=\\\"2\\\">\\n<li><strong> Skills Set</strong></li>\\n</ol>\\n<p>Having a home team or working with a freelancer might seem like a budget-friendly option for you. But, when you need someone with certain skills, you have to make a fresh start and get a new employee. It can be time consuming. For example, if you have a new digital embedding contract, you will need to spend time hiring a professional designer for digital making. On the other hand, if you go with an agency that offers all kinds of graphic solutions, you will be ready to meet the needs of the client.</p>\\n<ol start=\\\"3\\\">\\n<li><strong> Budget</strong></li>\\n</ol>\\n<p>The reason why many businesses avoid <a href=\\\"https://www.monkeysingh.com/how-it-works/\\\">hiring a graphic designing agency</a> is that they believe it will be expensive. But, it should not be. Find a reputable agency that can provide you with all the graphic design skills you need. If you have a great product / service delivery, you can increase your demand. Also, when the launch is over, you can reduce your spending. By avoiding the internal team, you will be able to reduce fixed costs and spend money wisely.</p>\\n<ol start=\\\"4\\\">\\n<li><strong> Experience</strong></li>\\n</ol>\\n<p>You may argue that the graphics agency may not understand the needs of your business. However, once the agency is familiar with your needs, you will be able to make the most of it. Many agencies have a dedicated team of experienced <a href=\\\"https://www.monkeysingh.com/\\\">unlimited graphic designers</a> working on a number of different projects. They are familiar with the latest trends in technology and design. Also, you will enjoy a new perspective that is always more profitable. You will find new information on design and ensure the best branding of your business.</p>\\n<p>&nbsp;</p>\\n<p><strong>Choosing a Graphic Design Agency is the Right thing to Go!</strong></p>\\n<p>Working with a graphic design agency actually makes things easier for you. It enables you to reduce costs and still offers the benefits of professional designers. However, it is important to work with the agency. If you do not work together with your marketing team, you will not get the results you want. Therefore, spend time choosing the best graphic design agency that fits your standards and provides you with more information.\",\n            \"date\": \"2021-11-20\",\n            \"image\": \"https://ik.imagekit.io/gzmznzzqlrz/blogpageImages/freelance-graphic-designer-invoicing_jdLMmXckonr.jpg?updatedAt=1640065704282\",\n            \"metaDescription\": \"2021-11-20\"\n        },\n        {\n            \"title\": \"Vinyl Graphics Decals\",\n            \"description\": \"Vinyl graphics have gained great popularity in recent years. One of the main reasons they are so widely used is because they attract two groups of people. The first group is a new generation who like to customize their cars.</p>\\n<p>There are thousands of different <a href=\\\"http://www.monkeysingh.com/\\\">unlimited graphics designs</a> to choose from, and this one is more expensive than a brand new paint job. Some target groups buy and use vinyl graphic decals for business owners.</p>\\n<p>It doesn’t matter if it’s a small or large company; this is a great way to advertise the name of a company or product. It costs less than other methods of developing a company, and it works the same way. Any car can benefit from discovering these valleys.</p>\\n<p>The most common type of vehicle you see on the road is a car. Whether it&#8217;s a sports car or a full size sedan, you see it everywhere. That being said, this is a car you will see a lot of it. In the advertising world, this is a great car that you can use to advertise a product, but given the shape and size of them all, it may not be the best choice.</p>\\n<p>Research has been done to determine the effectiveness of the stickers, markers and drawings of vinyl pictures and the results have been very successful. It indicated that more than 90 percent of the people on the street would turn around and read any text or pictures on the car. So any car, truck, SUV, or van will do the job, but there are some that are better suited when it comes to getting more exposure.</p>\\n<p>Many large companies have a wide range of vehicles for their various reasons. Their choice of van. In terms of appearance and style, a van may not be your top choice, but when it comes to advertising your company, it is not very useful.</p>\\n<p>The shape of the van usually gives it extra space where you can put decorations for vinyl graphics. With a bakkie you can get a larger size that you can put on the sides, or just like any car you can get the whole van covered and turn heads really.</p>\\n<p>For obvious reasons, the best car you can use to place these covers would be a full-size SUV. The front of the SUV is similar to the others, but the interior and rear are different and better equipped for advertising or larger design. The back is more like a box than a van or a car so you have a better sail to work with.</p>\\n<p>This is the closest thing you can find on a tire board when it comes to standard cars. As mentioned above, the rewards are great and many, no matter what kind of car you choose to park. The performance of advertising vinyl decals images is higher than the usual ways to make your business recognizable.</p>\\n<p>Vinyl is mostly used in advertisements and are some expensive so it is better to <a href=\\\"https://www.monkeysingh.com/packaging-designs/\\\">hire affordable graphic designer</a> who can design your attractive vinyl designs\",\n            \"date\": \"2021-10-28\",\n            \"image\": \"https://ik.imagekit.io/gzmznzzqlrz/blogpageImages/5e080d0b632d73445b64482432ee59750afc9b1e_original_pxXs1v2TjLS.jpeg?updatedAt=1640101129760\",\n            \"metaDescription\": \"2021-10-28\"\n        },\n        {\n            \"title\": \"Importance of Business Signs in Growing Business\",\n            \"description\": \"Business Signs are one of the most powerful social media tools out there. They attract more than half the customers in the beginning. The study found that 85% of potential customers are working or living within a five-mile business area. It means they can see your sign more than 50 to 60 times a month. Modern technology has made creative business logos more sophisticated with digital signage.</p>\\n<p><strong> </strong></p>\\n<p><strong>Significance of Business signs</strong></p>\\n<p>Business signs can create a brand image and attract potential customers. It helps people remember your product faster as they are made to improve the memory of your business with brands. It helps to increase the conversion rate as people shop at companies they know.</p>\\n<p>If you do the right research and design these signs carefully with the help of <a href=\\\"https://www.monkeysingh.com/\\\">graphic designing company</a>, it will be a talking point for people. It will also help to start oral marketing. You need to follow certain rules to get the result you want with business symbols.</p>\\n<p><strong> </strong></p>\\n<p><strong>Principles of Acquiring High Growth in Business Signs</strong></p>\\n<p><strong>Clear Message</strong> &#8211; Unless the message is clear in the business sign, you will not serve the purpose of attracting potential customers. The message should be small and be pointed. A compelling message will reach customers. No customer will agree to spend more than a few seconds seeing the brand. Any trademark should be short in order to advance an important point during a short period of attention.</p>\\n<p><strong>Make Colors</strong> &#8211; A Business signs should be designed in a colorful way. Whether you use car photos or a simple advertising board, bright signs that will make people turn heads and look. Use the latest technology to take advantage of digital signage boards with LED lights to create a seamless look.</p>\\n<p><strong>Timely Messages</strong> &#8211; The message displayed on the Business signs must be up-to-date and up-to-date. People will ignore outdated messages. Trademarks should always be updated to reflect the latest styles. In fact, the more recent the message, the better.</p>\\n<p><strong>Structure</strong> &#8211; Nothing is more important than the position and location of the trademarks. If you do not display the message in a prominent place, the message may not be recognized at all. Choose an area with lots of waterfalls. It will improve your chances of success.</p>\\n<p><strong> </strong></p>\\n<p><strong>Signs benefits:</strong></p>\\n<ol>\\n<li>Business logos can create a long-lasting impression because of their attractive displays and a recurring viewing system.</li>\\n<li>This type of advertising is less expensive and more efficient. It is one of the oldest forms of advertising that is relevant even in the modern digital world.</li>\\n<li>People trust the company and think the business is better established if you have your ad in the car and in other prominent places.</li>\\n</ol>\\n<p>&nbsp;</p>\\n<p>If you own a business, you should try the current external signals. It is probably the most effective and cheap way to advertise as it creates more awareness and trust between people. It is advisable that you should take help of <a href=\\\"https://www.monkeysingh.com/logo-design/\\\">graphic designing agency</a> to design creative business signs that attract customer and meaningful to your brand\",\n            \"date\": \"2021-10-29\",\n            \"image\": \"https://ik.imagekit.io/gzmznzzqlrz/blogpageImages/benefits-of-business-signage_sV_bG05baVnI.jpg?updatedAt=1640067429659\",\n            \"metaDescription\": \"2021-10-29\"\n        },\n        {\n            \"title\": \"How Logo Design Drafting is Heplful\",\n            \"description\": \"People often make the mistake of handling this important logo design task with complete reliance on the <a href=\\\"https://www.monkeysingh.com/\\\">unlimited graphic designer</a>. Of course, a logo or artist knows his work better but a little draft from your side will get you the best for a logo designer in India. I am sure you would agree with the fact that you know your business better than a graphic designer. It doesn’t require much on your side but briefly a little that explains what you want your business logo to be. This will save you time and money. Let me give you some tips here, when you are really serious about your business and its logo.</p>\\n<p>Company name in mind &#8211; When you start a new business, you should know the right name to decide. People recognize your company through your services. That is a fact we know. But people often see through our company name or logo too. So when writing keep your company name in mind and advise your logo designer to design something similar or featuring your company name. You can’t have the cross swords we see occasionally on the wall as your symbol to have your business logo. It&#8217;s just a good idea while you&#8217;re a king, planning to design a logo for your organization. So your company name and company logo must match.</p>\\n<p>Company services in mind &#8211; You know what you are offering. You know what you will add to your future contribution. You know what you are and what you were before. You also need to consider what you are and what you will become in the future. So keep your company&#8217;s resources in mind. What services do you provide and what services will you provide in the future. It says, if you have a small bakery today that sells biscuits and cookies. But in the future, you may find yourself famous for preparing &amp; selling wedding cakes in the area. So you need to have a logo that can be used and identify your business.</p>\\n<p>Company idea in mind &#8211; You should also keep your ideas in mind while <a href=\\\"https://www.monkeysingh.com/logo-design/\\\">creative logo design</a> for a hired logo designer. Vision is something we think about having our business in the future. It is a prediction that we should make our business reach a certain level or certain services. So this is important and really worth remembering.</p>\\n<p>Company marketing in mind &#8211; If you are already a product locally or nationally. You should see that your brand is affected by your logo. Your logo is a celebrity or personal identity. Therefore, you should also consider the name of your company, when writing.</p>\\n<p>In the minds of the company&#8217;s customers &#8211; If you are new to the business, you should not take any suggestion from any. But if you’re already famous, take one small update to one or two of your favorite customers. See if that allows them to share any items with your new logo design ideas. It could be a kind of small survey with your 10 &#8211; 15 customers. You will have a very good idea of ​​how you want it. You need to see what kind of customer base you have. You will need to get your customers&#8217; views on that too. Yes, but see what age customers are best at your business. You should only get advice from that customer level.\",\n            \"date\": \"2021-10-27\",\n            \"image\": \"https://ik.imagekit.io/gzmznzzqlrz/blogpageImages/GettyImages-1266126265-87747bb3a5af4d588e4e85711baec658_xuKYYpN_F.jpeg?updatedAt=1640101235295\",\n            \"metaDescription\": \"2021-10-27\"\n        },\n        {\n            \"title\": \"How to Design Attractive Club Flyer\",\n            \"description\": \"If you want to build a club flyer you can do this in two ways. First, you can ask <a href=\\\"https://www.monkeysingh.com/\\\">unlimited graphic designing company</a> to make you a club flyer. Plus you&#8217;ll be making your own club flyer. If someone makes you a club flyer it can be very expensive. Making a club flyer alone is the best way. The reason behind it is that you can save money and if you want to build flyers for more clubs you can do this. Many people think that building a club flyer is very difficult but in reality it is not. Every club flyer built is based on three elements. Vector, Image and Font style. The club flyer can have a photo or vector image or both. Whenever you create a flyer make sure the image shows something. This “something” will be your special event, the people who will be coming, the environment and more. The photo should reflect your special event in a very attractive way. After all a club flyer is an ad</p>\\n<p>Otherwise your club or special event should not be confused. Those who want to come should come easily and make sure tickets are readily available. Here are some steps you can use to design creative club flyers. First of all you may need photo editing software. The best on the market is Adobe software. It will cost you but it will give you a big profit over time. You will not regret your decision. You can also get free photo software’s, but they won&#8217;t give you enough customization capabilities. To print a club flyer you will also need a paper printer. Generally printer of flyers prints 4 by 6, 8.5 to 2.75 and in various formats. Whatever image you have, you can open it in the photo editing software. You can also create your own photo with the help of photo editing software.</p>\\n<p>You can make the images in a dynamic area or in the name of Microsoft but designing them there will be very difficult. You should remember that these are not photo editing software. You can create a flyer in two ways. It can be one-sided or it can be double-sided. Creating a two-dimensional flyer is great, as it can be very attractive in appearance. The back of the club flyer should always be a solid color. You can use any color depending on the theme but make sure it is solid. The font you can use should always be visible in a solid background. If the background is dark you can use bright font colors and more. Add information about event, date, time, location and more. You can place the text in front of the top or bottom. You can also place this information on the back of the flyer. The back side usually has more filling space.</p>\\n<p>If you found it difficult to design a creative flyer then you may <a href=\\\"https://www.monkeysingh.com/banner-design/\\\">hire affordable graphic designer</a> to design your club flyers.\",\n            \"date\": \"2021-10-27\",\n            \"image\": \"https://ik.imagekit.io/gzmznzzqlrz/blogpageImages/33a7a1d8e1e4c99adf936f3726ac7e27_z2CbjIKaIsS.jpeg?updatedAt=1640101329160\",\n            \"metaDescription\": \"2021-10-27\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "get blog by id",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "ws1WQAMwap4tPJQFEHo0"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"blog_id\":\"63106a2266ab41bfdb21896c\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8888/api/v1/app/blog/getBlogById",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8888",
+							"path": [
+								"api",
+								"v1",
+								"app",
+								"blog",
+								"getBlogById"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get blog by id",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "ws1WQAMwap4tPJQFEHo0"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"blog_id\":\"63106a2266ab41bfdb21896c\"\n}"
+								},
+								"url": {
+									"raw": "http://localhost:8888/api/v1/app/blog/getBlogById",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8888",
+									"path": [
+										"api",
+										"v1",
+										"app",
+										"blog",
+										"getBlogById"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "5702"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1646-2z2DibrTVuJNgx6X32cW5cQWigU\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 20 Mar 2023 18:58:35 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 200,\n    \"data\": {\n        \"author\": \"\",\n        \"title\": \"Tips For Podcast Cover Art\",\n        \"category\": \"\",\n        \"description\": \"<p>Podcasts are almost incomplete information. You build a close connection with your audience by whispering in their ears for an hour. But before your words reach the ears of your listeners, there is one area where visibility is most important: your podcast cover art.<br />Your podcast cover is the first thing your audience will see when they search for it on their phones. It is a first impression of your podcast and what you are trying to say. Most importantly, good podcast cover art is one of the requirements for a podcast embedded in iTunes.</p> <p>&nbsp;</p> <p><strong>How do can design the best podcast cover art?</strong></p> <p><br />Making podcast art sounds scary, but it shouldn&rsquo;t be! With the help of <a href=\\\"https://www.monkeysingh.com/\\\">graphic design companies in india</a>, some examples of inspiring podcast cover art, as well as a little art you can do.</p> <p>&nbsp;</p> <p><strong>Let your product speak</strong></p> <p><br />If this is a podcast created as part of a product marketing effort, you already have the type to build on. But if it's your personal podcast, you can still work on tagging it. Either way, think of the big picture. How do you want your podcast to be seen by your audience? Do you have a product personality designed for your show? These are the details that set your show apart even if there are many similar shows in your niche.</p> <p><br />A podcast cover that reflects the personality of your product could be a creative variation of your logo or perhaps use a mascot that you use in your logo in a fun way. Remember to use the same images regularly in your ads and on social media channels. As did Headspace with its Radio Headspace podcast.</p> <p>&nbsp;</p> <p><strong>Get Your Great Podcast Art Right</strong></p> <p><br />Size DOES matter. Before you get into the nitty-gritty design of your logo, make sure you understand your podcast artwork you must follow certain basic requirements in terms of size to be accepted in all major podcast text lists.</p> <p><br />For all the major podcast references, Apple Podcasts has strong requirements, however, fortunately, many other platforms have similar needs.</p> <p>&nbsp;</p> <p><strong>See Competition</strong></p> <p><br />If you lack the inspiration for your podcast cover art, a great way to make your creative juices flow by looking at what your competitors and peers are doing.</p> <p><br />For example, if your podcast is focused on reading, why not try selecting the Apple Podcasts 'Education' section to see what is already on the list? Or click on the 'What's Hot' section of 'education' and think about why those particular podcasts stand out from the crowd.</p> <p>&nbsp;</p> <p><strong>Learn the language of the target audience</strong></p> <p><br />We are not speaking a human language here but a visual language. What you tell someone does not really matter if that person does not understand your language well? Similarly, the design of an amazing podcast cover will not work if you ignore the preferences of your audience. But how do you know if your target audience will like it? Public listening is the voice spoken here. Watch the conversations they have. Content they share.</p> <p><br />This is why experts continue to talk about the need for a good niche for your podcast. If you have a clear niche, it is easy to understand your target audience. And if you understand your intended audience, you know how they can pay attention to you. This also helps you understand the type of design that works best on your podcast cover.</p> <p>&nbsp;</p> <p><strong>Cut out the visible clutter</strong></p> <p><br />Because you have one image that will represent the entire episode you post, do not try to squeeze too many things into your podcast cover. Having a confusing cover is worse than having an unrelated stock image as part of the cover art of your podcast.</p> <p><br />Build on a simple concept and create a straightforward design. That is a way to win the hearts of your listeners. A small cover with a good message will also be a way to show your audience how you like to keep things organized. So they will know that your podcast will convey many important details in a short amount of time.</p> <p>&nbsp;</p> <p><strong>Avoid overused podcasting images</strong></p> <p><br />Unless your podcast is about the podcast category, do not use microphone images and pop filters. Podcasting is the media you use &mdash; it is not the story of your show. Adding headphones to your artwork is like putting DVDs and cameras on a movie poster.</p> <p>&nbsp;</p> <p><strong>Use the same marker</strong></p> <p><br />Apple, Coca-Cola, and Nike are all experts in branding because they use consistent images throughout their forums. Use the same colors, fonts, and images in your podcast artwork that you use on your website and social media.</p> <p>Your name and podcast cover art, work together harmoniously<br />The full podcast logo includes a host of things aimed at one goal: to tell the audience who you are, and why they should listen to you. It can be hard work, especially as many podcasts start out as love projects. They will be personal and close.</p> <p><br />But that does not mean that you should walk alone. Graphic design companies in india can take your style and tone, and create a podcast cover that conveys that feeling across all forums.</p>\",\n        \"date\": \"2022-08-30\",\n        \"image\": \"https://ik.imagekit.io/gzmznzzqlrz/blogpageImages/Untitled-design-4-Edited_wCwcOC4Sx.png?ik-sdk-version=javascript-1.4.3&updatedAt=1662019949252\",\n        \"metaDescription\": \"2022-08-30\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "editBlog",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "ws1WQAMwap4tPJQFEHo0"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"blog_id\":\"63106a2266ab41bfdb21896c\",\n    \"data\":{\n        \"author\":\"Mr. Wrong\"\n    }\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8888/api/v1/app/blog/editBlog",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8888",
+							"path": [
+								"api",
+								"v1",
+								"app",
+								"blog",
+								"editBlog"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "editBlog",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "ws1WQAMwap4tPJQFEHo0"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"blog_id\":\"63106a2266ab41bfdb21896c\",\n    \"data\":{\n        \"author\":\"Mr. Wrong\"\n    }\n}"
+								},
+								"url": {
+									"raw": "http://localhost:8888/api/v1/app/blog/editBlog",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8888",
+									"path": [
+										"api",
+										"v1",
+										"app",
+										"blog",
+										"editBlog"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "24"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"18-r+LepOhXZV3ABLbIW3JaPFfYe9A\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 20 Mar 2023 19:13:28 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 200,\n    \"data\": true\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "story",
+			"item": [
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "ws1WQAMwap4tPJQFEHo0",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "\r\n{\r\n    \"videoURL\":\"dffbdk\",\r\n    \"imageURL\":\"badf\",\r\n    \"description\":\"jdksfkj\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8888/api/v1/app/story/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8888",
+							"path": [
+								"api",
+								"v1",
+								"app",
+								"story",
+								"create"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "create",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "ws1WQAMwap4tPJQFEHo0",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"videoURL\":\"dffbdk\",\r\n    \"imageURL\":\"badf\",\r\n    \"description\":\"jdksfkj\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8888/api/v1/app/story/create",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8888",
+									"path": [
+										"api",
+										"v1",
+										"app",
+										"story",
+										"create"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "170"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"aa-123U7F8a3aE7Ud970UcFYCt2GQs\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 22 Mar 2023 19:21:56 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 200,\n    \"data\": {\n        \"videoURL\": \"dffbdk\",\n        \"imageURL\": \"badf\",\n        \"description\": \"jdksfkj\",\n        \"_id\": \"641b55520318e3bdbc5aa5a5\",\n        \"__v\": 0\n    },\n    \"message\": \"Blog Create has been successfully\"\n}"
+						}
+					]
+				},
+				{
+					"name": "getstoryById",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "ws1WQAMwap4tPJQFEHo0",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"story_id\":\"641b55520318e3bdbc5aa5a5\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8888/api/v1/app/story/getstoryById",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8888",
+							"path": [
+								"api",
+								"v1",
+								"app",
+								"story",
+								"getstoryById"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "create",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "ws1WQAMwap4tPJQFEHo0",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"videoURL\":\"dffbdk\",\r\n    \"imageURL\":\"badf\",\r\n    \"description\":\"jdksfkj\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8888/api/v1/app/story/create",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8888",
+									"path": [
+										"api",
+										"v1",
+										"app",
+										"story",
+										"create"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "170"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"aa-123U7F8a3aE7Ud970UcFYCt2GQs\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 22 Mar 2023 19:21:56 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 200,\n    \"data\": {\n        \"videoURL\": \"dffbdk\",\n        \"imageURL\": \"badf\",\n        \"description\": \"jdksfkj\",\n        \"_id\": \"641b55520318e3bdbc5aa5a5\",\n        \"__v\": 0\n    },\n    \"message\": \"Blog Create has been successfully\"\n}"
+						},
+						{
+							"name": "getstoryById",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "ws1WQAMwap4tPJQFEHo0",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"story_id\":\"641b55520318e3bdbc5aa5a5\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8888/api/v1/app/story/getstoryById",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8888",
+									"path": [
+										"api",
+										"v1",
+										"app",
+										"story",
+										"getstoryById"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "83"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"53-VLzfAwcx1gYJ9aUqfcCdGKebRoQ\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 22 Mar 2023 19:36:30 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 200,\n    \"data\": {\n        \"videoURL\": \"dffbdk\",\n        \"imageURL\": \"badf\",\n        \"description\": \"jdksfkj\"\n    }\n}"
+						},
+						{
+							"name": "getstoryById",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "ws1WQAMwap4tPJQFEHo0",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"story_id\":\"641b55520318e3bdbc5aa5a5\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8888/api/v1/app/story/getstoryById",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8888",
+									"path": [
+										"api",
+										"v1",
+										"app",
+										"story",
+										"getstoryById"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "83"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"53-VLzfAwcx1gYJ9aUqfcCdGKebRoQ\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 22 Mar 2023 19:36:30 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 200,\n    \"data\": {\n        \"videoURL\": \"dffbdk\",\n        \"imageURL\": \"badf\",\n        \"description\": \"jdksfkj\"\n    }\n}"
+						},
+						{
+							"name": "getstoryById",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "ws1WQAMwap4tPJQFEHo0",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"story_id\":\"641b55520318e3bdbc5aa5a5\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8888/api/v1/app/story/getstoryById",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8888",
+									"path": [
+										"api",
+										"v1",
+										"app",
+										"story",
+										"getstoryById"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "83"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"53-VLzfAwcx1gYJ9aUqfcCdGKebRoQ\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 22 Mar 2023 19:36:30 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 200,\n    \"data\": {\n        \"videoURL\": \"dffbdk\",\n        \"imageURL\": \"badf\",\n        \"description\": \"jdksfkj\"\n    }\n}"
+						},
+						{
+							"name": "getstoryById",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "ws1WQAMwap4tPJQFEHo0",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"story_id\":\"641b55520318e3bdbc5aa5a5\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8888/api/v1/app/story/getstoryById",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8888",
+									"path": [
+										"api",
+										"v1",
+										"app",
+										"story",
+										"getstoryById"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "83"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"53-VLzfAwcx1gYJ9aUqfcCdGKebRoQ\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 22 Mar 2023 19:36:30 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 200,\n    \"data\": {\n        \"videoURL\": \"dffbdk\",\n        \"imageURL\": \"badf\",\n        \"description\": \"jdksfkj\"\n    }\n}"
+						},
+						{
+							"name": "getstoryById",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "ws1WQAMwap4tPJQFEHo0",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"story_id\":\"641b55520318e3bdbc5aa5a5\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8888/api/v1/app/story/getstoryById",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8888",
+									"path": [
+										"api",
+										"v1",
+										"app",
+										"story",
+										"getstoryById"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "83"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"53-VLzfAwcx1gYJ9aUqfcCdGKebRoQ\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 22 Mar 2023 19:36:30 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 200,\n    \"data\": {\n        \"videoURL\": \"dffbdk\",\n        \"imageURL\": \"badf\",\n        \"description\": \"jdksfkj\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "editstory",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "ws1WQAMwap4tPJQFEHo0",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"story_id\":\"641b55520318e3bdbc5aa5a5\",\r\n    \"data\":{\r\n        \"description\":\"Mr. Wrong\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8888/api/v1/app/story/editstory",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8888",
+							"path": [
+								"api",
+								"v1",
+								"app",
+								"story",
+								"editstory"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "editstory",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "ws1WQAMwap4tPJQFEHo0",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"story_id\":\"641b55520318e3bdbc5aa5a5\",\r\n    \"data\":{\r\n        \"description\":\"Mr. Wrong\"\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8888/api/v1/app/story/editstory",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8888",
+									"path": [
+										"api",
+										"v1",
+										"app",
+										"story",
+										"editstory"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "24"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"18-r+LepOhXZV3ABLbIW3JaPFfYe9A\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 22 Mar 2023 20:00:56 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 200,\n    \"data\": true\n}"
+						}
+					]
+				},
+				{
+					"name": "deletestory",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "ws1WQAMwap4tPJQFEHo0",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"story_id\":\"641b55520318e3bdbc5aa5a5\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8888/api/v1/app/story/deletestory",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8888",
+							"path": [
+								"api",
+								"v1",
+								"app",
+								"story",
+								"deletestory"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "deletestory",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "ws1WQAMwap4tPJQFEHo0",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"story_id\":\"641b55520318e3bdbc5aa5a5\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8888/api/v1/app/story/deletestory",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8888",
+									"path": [
+										"api",
+										"v1",
+										"app",
+										"story",
+										"deletestory"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "24"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"18-r+LepOhXZV3ABLbIW3JaPFfYe9A\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 22 Mar 2023 20:01:58 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 200,\n    \"data\": true\n}"
+						}
+					]
+				},
+				{
+					"name": "getstorys",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "ws1WQAMwap4tPJQFEHo0",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8888/api/v1/app/story/getstorys",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8888",
+							"path": [
+								"api",
+								"v1",
+								"app",
+								"story",
+								"getstorys"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "getstorys",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "ws1WQAMwap4tPJQFEHo0",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:8888/api/v1/app/story/getstorys",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8888",
+									"path": [
+										"api",
+										"v1",
+										"app",
+										"story",
+										"getstorys"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "461"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1cd-07V41bAsetQWv2ByYg9la+JHp5E\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 22 Mar 2023 19:55:51 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 200,\n    \"data\": [\n        {\n            \"videoURL\": \"https://www.youtube.com/embed/h8vqYEuPeFc\",\n            \"imageURL\": \"\",\n            \"description\": \"\"\n        },\n        {\n            \"videoURL\": \"https://www.youtube.com/embed/K_6QNW26tck\",\n            \"imageURL\": \"\",\n            \"description\": \"\"\n        },\n        {\n            \"videoURL\": \"https://www.youtube.com/embed/ID79SWnEGPU\",\n            \"imageURL\": \"\",\n            \"description\": \"\"\n        },\n        {\n            \"videoURL\": \"https://www.youtube.com/embed/t4jjy8T-m8k\",\n            \"imageURL\": \"\",\n            \"description\": \"\"\n        },\n        {\n            \"videoURL\": \"https://www.youtube.com/embed/FGlxnlScfIA\",\n            \"imageURL\": \"\",\n            \"description\": \"\"\n        }\n    ]\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "testimonial",
+			"item": [
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "ws1WQAMwap4tPJQFEHo0",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "\r\n{\r\n    \"name\":\"dffbdk\",\r\n    \"designation\":\"badf\",\r\n    \"image\":\"jdksfkj\",\r\n    \"description\":\"bjhbsad\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8888/api/v1/app/testimonial/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8888",
+							"path": [
+								"api",
+								"v1",
+								"app",
+								"testimonial",
+								"create"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "create",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "ws1WQAMwap4tPJQFEHo0",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "\r\n{\r\n    \"name\":\"dffbdk\",\r\n    \"designation\":\"badf\",\r\n    \"image\":\"jdksfkj\",\r\n    \"description\":\"bjhbsad\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8888/api/v1/app/testimonial/create",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8888",
+									"path": [
+										"api",
+										"v1",
+										"app",
+										"testimonial",
+										"create"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "187"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"bb-KCpisj+8QuzNhe3zzfmUkqh2o7A\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 22 Mar 2023 20:09:19 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 200,\n    \"data\": {\n        \"name\": \"dffbdk\",\n        \"designation\": \"badf\",\n        \"image\": \"jdksfkj\",\n        \"description\": \"bjhbsad\",\n        \"_id\": \"641b606ef0547e05f352bc5d\",\n        \"__v\": 0\n    },\n    \"message\": \"Blog Create has been successfully\"\n}"
+						}
+					]
+				},
+				{
+					"name": "edittestimonial",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "ws1WQAMwap4tPJQFEHo0",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"testimonial_id\":\"641b606ef0547e05f352bc5d\",\r\n    \"data\":{\r\n        \"description\":\"Mr. Wrong\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8888/api/v1/app/testimonial/edittestimonial",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8888",
+							"path": [
+								"api",
+								"v1",
+								"app",
+								"testimonial",
+								"edittestimonial"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "edittestimonial",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "ws1WQAMwap4tPJQFEHo0",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"testimonial_id\":\"641b606ef0547e05f352bc5d\",\r\n    \"data\":{\r\n        \"description\":\"Mr. Wrong\"\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8888/api/v1/app/testimonial/edittestimonial",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8888",
+									"path": [
+										"api",
+										"v1",
+										"app",
+										"testimonial",
+										"edittestimonial"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "24"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"18-r+LepOhXZV3ABLbIW3JaPFfYe9A\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 22 Mar 2023 20:14:07 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 200,\n    \"data\": true\n}"
+						}
+					]
+				},
+				{
+					"name": "deletetestimonial",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "ws1WQAMwap4tPJQFEHo0",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"testimonial_id\":\"641b606ef0547e05f352bc5d\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8888/api/v1/app/testimonial/deletetestimonial",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8888",
+							"path": [
+								"api",
+								"v1",
+								"app",
+								"testimonial",
+								"deletetestimonial"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "deletetestimonial",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "ws1WQAMwap4tPJQFEHo0",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"testimonial_id\":\"641b606ef0547e05f352bc5d\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8888/api/v1/app/testimonial/deletetestimonial",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8888",
+									"path": [
+										"api",
+										"v1",
+										"app",
+										"testimonial",
+										"deletetestimonial"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "24"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"18-r+LepOhXZV3ABLbIW3JaPFfYe9A\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 22 Mar 2023 20:15:34 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 200,\n    \"data\": true\n}"
+						}
+					]
+				},
+				{
+					"name": "gettestimonials",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "ws1WQAMwap4tPJQFEHo0",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8888/api/v1/app/testimonial/gettestimonials",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8888",
+							"path": [
+								"api",
+								"v1",
+								"app",
+								"testimonial",
+								"gettestimonials"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "gettestimonials",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "ws1WQAMwap4tPJQFEHo0",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:8888/api/v1/app/testimonial/gettestimonials",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8888",
+									"path": [
+										"api",
+										"v1",
+										"app",
+										"testimonial",
+										"gettestimonials"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1343"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"53f-gXDavGGkl772KE7ETHzgHzCZdek\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 22 Mar 2023 20:12:40 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 200,\n    \"data\": [\n        {\n            \"name\": \"Douglas Berg\",\n            \"designation\": \"Web-Design\",\n            \"image\": \"\",\n            \"description\": \"Monkeysingh has been an astounding resource in the plan world for me. They have fast pivot times and produce extraordinary work.\"\n        },\n        {\n            \"name\": \"Alexander Leckacz\",\n            \"designation\": \"Director\",\n            \"image\": \"\",\n            \"description\": \"“Jonathan and the MS group did an amazing job to get familiar with me and my business. Energy Digital has a couple of different activities that Monkeysingh had the option to find out about from what we needed…\"\n        },\n        {\n            \"name\": \"Dan Mrazik\",\n            \"designation\": \"CEO\",\n            \"image\": \"\",\n            \"description\": \"“I’m very dazzled with the general quality given by Monkeysingh. My new site appears as though it cost a huge number of dollars. Monkeysingh is my distinct advantage to send top-notch plans in minutes…\"\n        },\n        {\n            \"name\": \"Doreen Weekly\",\n            \"designation\": \"Marketing\",\n            \"image\": \"\",\n            \"description\": \"Couldn’t have been something more. I required a logo re-worked and Monkeysingh turned it around overnight. Furthermore, it was just $25. Very much done!\"\n        },\n        {\n            \"name\": \"Valentinos M.\",\n            \"designation\": \"Web design\",\n            \"image\": \"\",\n            \"description\": \"We have been utilizing Monkeysingh for around a half year on a few tasks. The imagination is great, the turnaround is astounding. It’s not difficult to convey change demands. Unquestionably our go to visual depiction accomplice!\"\n        }\n    ]\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "portfolio",
+			"item": [
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "ws1WQAMwap4tPJQFEHo0",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"category\":\"sadhjb\",\r\n    \"image\":\"has\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8888/api/v1/app/portfolio/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8888",
+							"path": [
+								"api",
+								"v1",
+								"app",
+								"portfolio",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getportfolioById",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "ws1WQAMwap4tPJQFEHo0",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"portfolio_id\":\"641b7c28ace016bb5feec1f2\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8888/api/v1/app/portfolio/getportfolioById",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8888",
+							"path": [
+								"api",
+								"v1",
+								"app",
+								"portfolio",
+								"getportfolioById"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getportfolios",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "ws1WQAMwap4tPJQFEHo0",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8888/api/v1/app/portfolio/getportfolios",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8888",
+							"path": [
+								"api",
+								"v1",
+								"app",
+								"portfolio",
+								"getportfolios"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "editportfolio",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "ws1WQAMwap4tPJQFEHo0",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"portfolio_id\":\"641b7c28ace016bb5feec1f2\",\r\n     \"data\":{\r\n        \"category\":\"Mr. Wrong\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8888/api/v1/app/portfolio/editportfolio",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8888",
+							"path": [
+								"api",
+								"v1",
+								"app",
+								"portfolio",
+								"editportfolio"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteportfolio",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "ws1WQAMwap4tPJQFEHo0",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"portfolio_id\":\"641b7c28ace016bb5feec1f2\" \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8888/api/v1/app/portfolio/deleteportfolio",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8888",
+							"path": [
+								"api",
+								"v1",
+								"app",
+								"portfolio",
+								"deleteportfolio"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "user",
+			"item": [
+				{
+					"name": "getcustomers",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "ws1WQAMwap4tPJQFEHo0",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8888/api/v1/app/customer/getcustomers",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8888",
+							"path": [
+								"api",
+								"v1",
+								"app",
+								"customer",
+								"getcustomers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getsupportRickets",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "ws1WQAMwap4tPJQFEHo0",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8888/api/v1/app/customer/getsupportRickets",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8888",
+							"path": [
+								"api",
+								"v1",
+								"app",
+								"customer",
+								"getsupportRickets"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Login api",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "ws1WQAMwap4tPJQFEHo0",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\":\"deepak@trigunayat.com                                                  \",\n    \"password\":\"32454657\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8888/api/v1/auth/verification",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8888",
+					"path": [
+						"api",
+						"v1",
+						"auth",
+						"verification"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "media upload",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "ws1WQAMwap4tPJQFEHo0",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/home/deepak-pc/Pictures/marli.zip"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8888/api/v1/App/media/storage",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8888",
+					"path": [
+						"api",
+						"v1",
+						"App",
+						"media",
+						"storage"
+					],
+					"query": [
+						{
+							"key": "file",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Customer LIST",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "ws1WQAMwap4tPJQFEHo0",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"50 of the best graphic design blogs for inspiration in 2022\",\n    \"category\": \" GRAPHIC DESIGN\",\n    \"author\": \"Deepak\",\n    \"image\": \"https://gis247.s3.us-east-2.amazonaws.com/org_2021US0014/products/image/1638438724.jpg\",\n    \"date\": \"18/March-2023\",\n    \"description\": \"I Love Typography  Claiming to be the world's most popular typography blog, you'll find posts on typography, type history, font creation, printmaking, calligraphy, and plenty more on I Love Typography. You'll also see links that enable you to buy the latest fonts from indie foundries\",\n    \"metaDescription\": \"I Love Typography  Claiming to be the world's most popular typography blog, you'll find posts on typography, type history, font creation, printmaking, calligraphy, and plenty more on I Love Typography. You'll also see links that enable you to buy the latest fonts from indie foundries\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8888/api/v1/App/customer/get",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8888",
+					"path": [
+						"api",
+						"v1",
+						"App",
+						"customer",
+						"get"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Blogs",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "ws1WQAMwap4tPJQFEHo0",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"50 of the best graphic design blogs for inspiration in 2022\",\n    \"category\": \" GRAPHIC DESIGN\",\n    \"author\": \"Deepak\",\n    \"image\": \"https://gis247.s3.us-east-2.amazonaws.com/org_2021US0014/products/image/1638438724.jpg\",\n    \"date\": \"18/March-2023\",\n    \"description\": \"I Love Typography  Claiming to be the world's most popular typography blog, you'll find posts on typography, type history, font creation, printmaking, calligraphy, and plenty more on I Love Typography. You'll also see links that enable you to buy the latest fonts from indie foundries\",\n    \"metaDescription\": \"I Love Typography  Claiming to be the world's most popular typography blog, you'll find posts on typography, type history, font creation, printmaking, calligraphy, and plenty more on I Love Typography. You'll also see links that enable you to buy the latest fonts from indie foundries\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8888/api/v1/App/blog/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8888",
+					"path": [
+						"api",
+						"v1",
+						"App",
+						"blog",
+						"create"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

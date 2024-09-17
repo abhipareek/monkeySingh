@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>  
+    <meta charset="UTF-8">
+ 
+    <title>Watch Demo - Monkeysingh</title>
+</head>
+
+<body>
+
+    <!-- header  -->
+    <%- include("partials/primaryHeader.ejs") %>
+    <section class="tf-section three_step " style="padding-bottom: 235px;">
+        <div class="overlay"></div>
+        <div class="container"> 
+        </div>
+        </section>
+
+        <%- include("sections/howitworks.ejs") %> 
+        <section class="tf-section tf-wallet" data-aos-delay="500" data-aos="fade-up" data-aos-duration="800">
+            <div class="container">
+                <div class="row">   
+                    <div class="col-md-12">
+                        <div class="wallet-form">
+                            <h4>Watch Demo</h4> 
+                            <div class="spacing"></div>   
+                            <form action="/watch-demo"  method="post"  class="form-contact">
+                                <div class="project-info-form">
+                                    <h6 class="title">Leave a message</h6> 
+                                    
+                                    <div class="form-inner">
+                                        <fieldset>
+                                            <label >
+                                                Full name
+                                            </label>
+                                            <input type="text" name="name" id="name" placeholder="Full Name" required>
+                                        </fieldset>
+                                        <fieldset>
+                                            <label >
+                                                Email address
+                                            </label>
+                                            <input type="email" name="email" id="email" placeholder="Email" required>
+                                        </fieldset>
+                                        <fieldset>
+                                            <label >
+                                                Phone
+                                            </label>
+                                            <input type="tel" name="phoneNumber" id="phoneNumber"
+                                            placeholder="Telephone Number" required>
+                                        </fieldset>
+                                        <fieldset>
+                                            <label >
+                                                Comapny Name
+                                            </label>
+                                            <input type="text" name="companyName" id="companyName"
+                                            placeholder="Company Name"  required>
+                                        </fieldset>
+                                        <fieldset>
+                                            <label for="message">
+                                                Mesage
+                                            </label>
+                                            <textarea id="message" placeholder="Tell us about the project you wan to launch" rows="5" tabindex="4" name="message" class="message" id="message" required></textarea>
+                                        </fieldset> 
+                                    </div>
+                                </div> 
+        
+                                <div class="wrap-btn">
+                                    <button type="submit" style="margin-left: 465px;" class="tf-button style1">
+                                        Submit
+                                    </button>
+                                </div>
+                            </form>
+                            
+                            
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> 
+      
+        <!-- footer  -->
+        <%- include("partials/footer.ejs") %>
+</body>
+
+</html>

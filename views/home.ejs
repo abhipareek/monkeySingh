@@ -1,0 +1,303 @@
+<%- include("partials/primaryHeader.ejs") %>
+
+    <section class="page-title st3"> 
+        <div class="overlay">
+        </div>
+        <div class="swiper-container slider-main">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="slider-st3">
+                    
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="box-slider">
+                                        <div class="content-box">
+                                            <h1 class="title" >Unlimited Graphic Design Services in India</h1>
+                                            <p class="sub-title">Your on-demand graphic design service. Simple, fast and affordable designers at fixed monthly rate</p>
+                                            <div class="wrap-btn">
+                                                <a href="one-free-creative" class="tf-button style2">
+                                                    One Free Creative
+                                                </a>                                               
+                                                <a href="watch-demo" class="tf-button style1 homewatch-demo">
+                                                    Watch Demo
+                                                </a>
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="image">
+                                            <img class="img_main" src="/static/assets/images/common/img_slider3.png" alt="">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slider-st3">
+                    
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="box-slider">
+                                        <div class="content-box">
+                                            <h1 class="title" >Your one-stop solution for all your design needs!</h1>
+                                            <p class="sub-title">our on-demand graphic design service. Simple, fast and affordabledesigners at fixed monthly rate.</p>
+                                            <div class="wrap-btn">                                              
+                                              <a href="/contact-us" class="tf-button style2" >
+                                                Contact Us
+                                              </a>
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="image">
+                                            <img class="img_main" src="/static/assets/images/common/img_technology1.png" alt="">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="btn-next-main"><i class="far fa-angle-right"></i></div>
+            <div class="btn-prev-main"><i class="far fa-angle-left"></i></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section> 
+<%- include("sections/features.ejs") %>
+<%- include("sections/howitworks.ejs") %>  
+ <%- include("sections/pricing.ejs") %>
+
+ 
+    
+
+<!-- STORE Section Start  -->  
+
+        <section class="tf-section tf-blog pt60">
+            <div class="container">
+                <div class="row"> 
+                    <div class="col-md-12">     
+                        <h2 class="title">See what others are saying</h2>
+                        <p class="maincontent">DON'T JUST TAKE OUR WORD FOR IT</p>
+                    
+                    </div> 
+                        <% storyArray.forEach((story)=> { %>
+                    <div class="col-lg-4 col-md-12">
+                        <div class="grid-box grid-box-video">
+                           
+                            <div class="image">
+                                <iframe width="400" height="300"  class="rounded-md" src="<%= story.videoURL %>">
+                                </iframe>
+                                <img src="<%= story.imageURL %>" alt="">
+                            </div>
+                            <!-- <div class="content">
+                                <%= story.description %>
+                            </div> -->
+                           
+                        </div>
+                    </div>
+                    <% }); %>
+                      
+                        <div class="col-md-12">
+                            <div class="content_faq text-center">
+                                <p>The world’s greatest companies entrust their designs to MonkeySingh</p>
+                                <div class="wrap-btn">
+                                    <a href="/customer-stories" class="tf-button style1">
+                                        See more
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                     
+                </div>
+            </div>
+        </section>  
+<!-- STORE Section END  -->
+ 
+
+<section class="tf-section tf_partner">
+    <div class="overlay">
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="tf-title" data-aos="fade-up" data-aos-duration="800">
+                    <h2 class="title">
+                        Our Partners
+                    </h2>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="partner-wrapper style3" data-aos="fade-up" data-aos-duration="800">
+                    <a href="javascript:void();" class="image">
+                        <img src="https://ik.imagekit.io/gzmznzzqlrz/LogoSection/120x36_a_hst_huFTn.png?updatedAt=1639935736111" alt="">
+                    </a>
+                    <a href="javascript:void();" class="image">
+                        <img src="https://ik.imagekit.io/gzmznzzqlrz/LogoSection/120x36_ac_n_lD5Om_y.png?updatedAt=1639935735992" alt="">
+                    </a>
+                    <a href="javascript:void();" class="image">
+                        <img src="https://ik.imagekit.io/gzmznzzqlrz/LogoSection/120x36c85v_ko1A8Gsnc.png?updatedAt=1639935735964" alt="">
+                    </a>
+                    <a href="javascript:void();" class="image">
+                        <img src="https://ik.imagekit.io/gzmznzzqlrz/LogoSection/120x36_vd_H3d0c4AVdqP.png?updatedAt=1639935735946" alt="">
+                    </a>
+
+                    <a href="javascript:void();" class="image">
+                        <img src="https://ik.imagekit.io/gzmznzzqlrz/LogoSection/120x36_cvv__QZUre5a6.png?updatedAt=1639935735982" alt="">
+                    </a>
+
+                    <a href="javascript:void();" class="image">
+                        <img src="https://ik.imagekit.io/gzmznzzqlrz/LogoSection/120x36c58v_DMl1subOM.png?updatedAt=1639935736071" alt="">
+                    </a>
+                     
+                </div>
+              
+            </div>
+        </div>
+    </div>
+</section>
+     
+
+
+<!-- <section class="tf-section tf_CTA_2">
+        <div class="overlay">
+        </div>
+        <div class="container relative">
+           
+            <div class="row">
+                <div class="col-md-9">
+                    <div class="tf-title left mb0" data-aos="fade-up" data-aos-duration="800">
+                        <h2 class="title">
+                            Jam-packed with all the tools you need to succeed!
+                        </h2>
+                        <p class="sub">It's never been easier to build a business of your own. Our tools will help you with the following:</p>
+                        <ul>
+                            <li>
+                                <p class="text">Min allocation</p>
+                                <p class="price">0.01</p>
+                            </li>
+                            <li>
+                                <p class="text">Maximum</p>
+                                <p class="price">TBA</p>
+                            </li>
+                            <li>
+                                <p class="text">Access</p>
+                                <p class="price">Public</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="image_cta" data-aos="fade-left" data-aos-duration="1200">
+                    <img class="move4" src="/static/assets/images/common/img_cta2.png" alt="">
+                    <img class="icon icon_1" src="/static/assets/images/common/icon_cta.png" alt="">
+                    <img class="icon icon_2" src="/static/assets/images/common/icon_cta_2.png" alt="">
+                  </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <section class="tf-section project">
+        <div class="w_1280">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="tf-title" data-aos="fade-up" data-aos-duration="800">
+                        <h2 class="title">
+                            Our Portfolio
+                        </h2>
+                        <div class="featured-countdown style2">
+                            <p class="featured_title"> Whether it’s a new logo, marketing materials, advertisements, banner or website/app
+                                design,
+                                there's always a dedicated
+                                designer for the job.</p>
+                            <span class="slogan"></span>
+                             
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="container_inner">
+                        <div class="swiper-container slider-11" data-aos="fade-in" data-aos-duration="1000">
+                            <div class="swiper-wrapper">
+                                <% workArray.forEach( work=> { %>
+                                <div class="swiper-slide">
+                                    <div class="project-box-style6">
+                                        <span class="boder"></span>
+                                        <div class="img-box">
+                                            <div class="image">
+                                                <% if(work.category !="Motion-Video" ){ %>
+                                                    <img class="rounded-md card-image" src="<%= work.image %>" alt="" />
+                                                    <% }else{ %>
+                                                    <video width="500" height="545" autoplay muted controls class="rounded-md card-image">
+                                                      <source src="<%= work.image %>" type="video/mp4">
+                                                    </video>
+                                                    <% } %> 
+                                                  
+                                            </div>
+                                             <div class="content-inner">
+                                                            <h5 class="heading"> <%= work.category %></h5>
+                                                    </div> 
+                                          
+                                        </div>
+                                       
+                                    </div>
+                                </div>
+                                <% }); %>
+
+                             
+                            </div>
+               
+                        </div>
+                        <div class="next_slider-11 next_slider"><svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.5 8H16.5M16.5 8L9.75 1.25M16.5 8L9.75 14.75" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            </div>
+                        <div class="prev_slider-11 prev_slider"><svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.5 8H1.5M1.5 8L8.25 1.25M1.5 8L8.25 14.75" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            </div>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <%- include("sections/faqs.ejs") %> 
+  
+
+    <!-- <section class="tf-section tf_CTA">
+
+        <div class="container relative">
+            <div class="overlay">
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="tf-title left mt66" data-aos="fade-up" data-aos-duration="800">
+                        <h2 class="title">
+                            Launch on Risebot
+                        </h2>
+                        <p class="sub">Full support in project incubation</p>
+                        <div class="wrap-btn">
+                            <a href="submit-IGO-on-chain.html" class="tf-button style3">
+                                Apply Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="image_cta" data-aos="fade-left" data-aos-duration="1200">
+                    <img class="move4" src="/static/assets/images/common/img_cta_1.png" alt="">
+                  </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <%- include("partials/footer.ejs") %>

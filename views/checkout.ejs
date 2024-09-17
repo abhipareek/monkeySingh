@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-216265845-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-216265845-1');
+    </script>
+
+    <meta name="google-site-verification" content="qqzra8HzYKGrUodVBn-dbHlZrWm-NBIH3IhY1EOhwJY" />
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.min.js"
+        integrity="sha512-u9akINsQsAkG9xjc1cnGF4zw5TFDwkxuc9vUp5dltDWYCSmyd0meygbvgXrlc/z7/o4a19Fb5V0OUE58J7dcyw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="icon" type="image/png"
+        href="https://ik.imagekit.io/gzmznzzqlrz/kjxkjjkjerhrhtjrhjr_zjUOAmuKz.png?updatedAt=1640517791171">
+
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/app/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="/static/app/dist/app.css">
+    <link rel="stylesheet" href="/static/assets/font/risebot.css">
+    <link rel="stylesheet" href="/static/assets/font/font-awesome.css">
+    <title>Checkout - Monkeysingh</title>
+    <meta name="robots" content="noindex nofollow" />
+    <style>
+        #paypal-button-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0 35%;
+            text-align: center;
+        }
+
+        #paypal-button-container .paypal-button-text {
+            text-align: center !important;
+        }
+
+        /* Media Query for smaller screens */
+        @media only screen and (max-width: 600px) {
+            #paypal-button-container {
+                padding: 0 5%;
+                /* Adjust the padding for smaller screens */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- component -->
+    <div class="h-screen">
+        <div class="p-6  md:mx-auto">
+            <svg viewBox="0 0 24 24" class="text-green-600 w-16 h-16 mx-auto my-6">
+                <path fill="currentColor"
+                    d="M12,0A12,12,0,1,0,24,12,12.014,12.014,0,0,0,12,0Zm6.927,8.2-6.845,9.289a1.011,1.011,0,0,1-1.43.188L5.764,13.769a1,1,0,1,1,1.25-1.562l4.076,3.261,6.227-8.451A1,1,0,1,1,18.927,8.2Z">
+                </path>
+            </svg>
+            <div class="text-center">
+                <h3 class="md:text-2xl text-base font-semibold text-center">Complete Your Payment</h3>
+                <p class="my-2">Please do not press the back button untill the process is complete</p>
+                <p> Have a great day! </p>
+                <div class="py-10 text-center">
+                    <div id="paypal-button-container"></div>
+
+                    <!-- <p id="result-message"></p> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <script
+        src="https://www.paypal.com/sdk/js?client-id=test&components=buttons&vault=true&intent=subscription&enable-funding=paylater,card"
+        data-sdk-integration-source="integrationbuilder_sc"></script>
+
+
+    <!-- Bootstrap modal -->
+    <style>
+        /* Centered div and h5 */
+        .centered-content {
+            top: 50%;
+            left: 50%;
+            text-align: center;
+            padding: 32px 0px 17px;
+        }
+    </style>
+    <div class="modal fade modal-full" tabindex="-1" role="dialog" id="errorModal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Payment Status</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="centered-content">
+                        <h5 id="modal-message"></h5>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <a class="tf-button style1" href="/dashboard">Back to Dashboard</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+<script>
+
+async function createSubmitSubscription(data) {
+  try {
+    const response = await fetch("/api/paypal/verify-subscription", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        userAction: "SUBSCRIBE_NOW",
+        orderId: data?.orderId,
+        subscriptionID:data?.subscriptionID,
+        create_time:data?.create_time,
+      }),
+    });
+
+    const data = await response.json();
+
+    if (data.success) {
+      // Order ID saved successfully, you can handle this as needed
+      console.log("Order ID saved successfully");
+      return data.id; // Assuming the order ID is available in the response
+    } else {
+      // Handle the case where saving to the database failed
+      console.error("Failed to save order ID:", data.message);
+      // You might want to display an error message to the user
+      throw new Error("Failed to save order ID");
+    }
+  } catch (error) {
+    console.error("Error while saving order ID:", error);
+    // You might want to display an error message to the user
+    throw new Error("Error while saving order ID");
+  }
+}
+
+
+    window.paypal
+        .Buttons({
+            style: {
+                shape: "rect",
+                layout: "vertical",
+
+            },
+            async createSubscription() {
+                try {
+                    const response = await fetch("/api/paypal/create-subscription", {
+                        method: "POST",
+                        headers: {
+                            "Content-Type": "application/json",
+                        },
+                        body: JSON.stringify({ userAction: "SUBSCRIBE_NOW", "name": "<%= user.username %>", "email": "<%= user.email %>", }),
+                    });
+                    const data = await response.json();
+                    if (data?.id) {
+                        //errorModule.resultMessage(`Successful subscription...<br><br>`);
+                        return data.id;
+                    } else {
+                        console.error(
+                            { callback: "createSubscription", serverResponse: data },
+                            JSON.stringify(data, null, 2),
+                        );
+                        // (Optional) The following hides the button container and shows a message about why checkout can't be initiated
+                        const errorDetail = data?.details?.[0];
+                        errorModule.resultMessage(
+                            `Could not initiate PayPal Subscription...<br><br>${errorDetail?.issue || ""
+                            } ${errorDetail?.description || data?.message || ""} ` +
+                            (data?.debug_id ? `(${data.debug_id})` : ""),
+                            { hideButtons: true },
+                        );
+                    }
+                } catch (error) {
+                    console.error(error);
+                    errorModule.resultMessage(
+                        `Could not initiate PayPal Subscription...<br><br>${error}`,
+                    );
+                }
+            },
+            onApprove(data) {
+                /*
+                  No need to activate manually since SUBSCRIBE_NOW is being used.
+                  Learn how to handle other user actions from our docs:
+                  https://developer.paypal.com/docs/api/subscriptions/v1/#subscriptions_create
+                */
+                if (data.orderID) {
+                const orderID =   createSubmitSubscription(data.orderID,data.subscriptionID);
+                console.log("Received order ID:", orderID);
+                    errorModule.resultMessage(
+                        `You have successfully subscribed to the plan. Your subscription id is: ${data.subscriptionID}`,
+                    );
+                } else {
+                    errorModule.resultMessage(
+                        `Failed to activate the subscription: ${data.subscriptionID}`,
+                    );
+                }
+            },
+        })
+        .render("#paypal-button-container"); // Renders the PayPal button
+
+    // Example function to show a result to the user. Your site's UI library can be used instead.
+    const errorModule = (function () {
+        // Function to display a result message and open Bootstrap modal
+        function resultMessage(message) {
+            const container = document.querySelector("#modal-message");
+            container.innerHTML = message;
+
+            // Open Bootstrap modal
+            document.getElementById('errorModal').classList.add('show');
+            document.getElementById('errorModal').style.display = 'block';
+            document.body.classList.add('modal-open');
+        }
+
+        return {
+            resultMessage: resultMessage
+        };
+    })();
+
+
+</script>
+
+</html>

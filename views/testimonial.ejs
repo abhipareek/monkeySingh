@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+   
+    <title>Client Love - Monkeysingh</title>
+    <meta name="description"
+        content="Looking for unlimited graphic design service India? Hire affordable graphic designer India. MonkeySingh provide the Best unlimited graphic design services at affordable prices!" />
+    <meta property="og:locale" content="en_US" />  
+    <meta name="twitter:data1" content="5 minutes" />
+</head>
+
+<body class="">
+
+    <%- include("partials/primaryHeader.ejs") %>
+    <section class="tf-section three_step">
+        <div class="overlay"></div>
+        <div class="container"> 
+        </div>
+        </section>
+
+
+        <section class="page-title page-title-review">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                            <div class="breadcrumbs" data-aos="zoom-in" data-aos-duration="800">
+                                <h3 class="review-title">Client Love <i style="color: red;" class="fa fa-heart"></i></h3>
+                                <p>We’re grateful to have added value to our customer’s successful journeys.</p>
+
+                              
+                            </div>            
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="ds-reviews">
+            <div class="ds-review-platform">
+                <div class="container">
+                    
+                    <div class="row">
+                        <div class="col-lg-1 col-md-1 col-sm-12">
+                            
+                        </div>
+                        <div class="col-lg-10 col-md-10 col-sm-12">
+                            <div class="ds-review-box">
+                                <div class="ds-review-box-img">
+                                <img src="static/assets/Clutch_logo.v1.jpg" alt="MonkeySingh Reviews">
+                                </div>
+                                <h2>
+                                <span>5.0</span> 					
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                </h2>
+                                <!--
+                                <h3> 4 Reviews</h3>
+                                -->
+                            </div>
+                            <div class="ds-review-box">
+                                <div class="ds-review-box-img">
+                                    <img src="static/assets/Google-logo.png" alt="MonkeySingh Reviews">
+                                </div>
+                                    <h2>
+                                    <span>5.0</span> 					
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    </h2>
+                                    <!--
+                                    <h3> 8 Reviews</h3>
+                                    -->
+                            </div>
+                            <div class="ds-review-box">
+                                <div class="ds-review-box-img">
+                                    <img src="static/assets/G2-logo.v1.jpg" alt="MonkeySingh Reviews">
+                                </div>
+                                    <h2>
+                                    <span>5.0</span> 					
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    </h2>
+                                    <!--
+                                    <h3> 3 Review</h3>
+                                    -->
+                                
+                            </div>
+                        </div>
+                        <div class="col-lg-1 col-md-1 col-sm-12">
+                            
+                        </div>
+                    </div>
+                </div>		
+            </div> 
+            <div class="ds-review-text">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12">
+                            <h2 class="ds-review-title">Reviews</h2>
+                        </div>
+                    </div>
+                    
+                    <div class="row ds-review-row">
+                        
+                        
+                         <!-- Loop Start  -->
+                         <% testimonialArray.forEach(testimonial=> { %>
+
+                        <div class="col-lg-4 col-md-4 col-sm-6 ">
+                            <div class="ds-review-text-box">
+                                <div class="ds-review-text-bio">								
+                                    <div class="ds-review-bio-img img_<%= testimonial._id %>">	
+                                        <% if(testimonial.image){ %>
+                                     <img src="<%= testimonial.image %>" alt="MonkeySingh Reviews">
+                                     <% }else{ %>
+                                        <img src="static/assets/no-reviews.jpg" alt="MonkeySingh Reviews">
+                                        <% }; %>
+
+                                     </div>
+                                    <div class="ds-review-bio-details">								
+                                        <h3 class="Rname_<%= testimonial._id %>">	<%= testimonial.name %></h3>
+                                        <h4 class="Rprofessional_<%= testimonial._id %>">  <%= testimonial.designation %> </h4>
+                                    </div>
+                                </div>
+                             
+                                <div class="ds-review-text-ratings">
+                                    <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>					</div>
+                                <div class="ds-review-text-content Rcontent_<%= testimonial._id %>">
+                                    <%= testimonial.description %>
+                                    
+                                    <!-- <%- testimonial.description %> -->
+                                </div>
+                                <a class="open-popup" data-id="<%= testimonial._id %>"   rel="noopener noreferrer">Continue reading</a>
+                            </div> 											
+                            </div>  
+                            <% }); %>
+
+                      <!-- Loop END -->
+                              
+                                            
+                        </div>	
+                    </div>
+                </div>
+            </section>
+       
+        
+        <%- include("partials/footer.ejs") %>
+</body>
+
+</html>
