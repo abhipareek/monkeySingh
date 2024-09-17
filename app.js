@@ -228,15 +228,29 @@ app.use("/api/v1", apiRoutes);
 app.get("/how-it-works", (req, res) => {
   res.render("howitworks");
 });
+
 app.get("/watch-demo", (req, res) => {
   res.render("watchdemo");
 });
+
 app.get("/pricing", (req, res) => {
   res.render("pricing", { plans: plans });
 });
 
 app.get("/privacy-policy", (req, res) => {
   res.render("privacy-policy");
+});
+
+app.get("/refund-policy", (req, res) => {
+  res.render("refund-policy");
+});
+
+app.get("/terms-and-conditions", (req, res) => {
+  res.render("terms-and-conditions");
+});
+
+app.get("/shipping-and-collection", (req, res) => {
+  res.render("shipping-and-collection");
 });
 
 app.get("/dashboard", isLoggedIn, async function (req, res) {
