@@ -35,6 +35,10 @@ const { response } = require("express");
 const { rmSync } = require("fs");
 const fileUpload = require("express-fileupload");
 const striptags = require("striptags");
+const crypto = require("crypto");
+const axios = require('axios');
+const { URLSearchParams } = require('url');
+
 require("dotenv").config();
 const YOUR_DOMAIN = "https://wwww.monkeysingh.com";
 const { PAYPAL_CLIENT_ID, PAYPAL_CLIENT_SECRET, PAYPAL_BASE_URL } = process.env;
@@ -650,11 +654,17 @@ let selected_plan_id;
 let total_count_var;
 app.get("/checkout", isLoggedIn, async (req, res) => {
   let user = await User.findOne({ email: req?.user?.email });
-  res.render("checkout", { user: user });
+  res.render("checkout", { user: user, selected_plan_id: selected_plan_id });
 });
-app.post("/create-checkout-session", isLoggedIn, (req, res) => {
+app.get("/payment", isLoggedIn, async (req, res) => {
+  let user = await User.findOne({ email: req?.user?.email });
+  res.render("payment", { user: user, selected_plan_id: selected_plan_id });
+});
+app.post("/create-checkout-session", isLoggedIn, async (req, res) => {
   selected_plan_id = req.body.plan;
-  res.redirect("/checkout");
+  let user = await User.findOne({ email: req?.user?.email });
+
+  res.render("checkout", {user, selected_plan_id, amount:req.body.amount, productinfo : req.body.productinfo});
 });
 // OLD PAYMENT CODE
 app.post("/one-time-access", isLoggedIn, (req, res) => {
@@ -863,7 +873,68 @@ app.post("/api/paypal/verify-subscription", async (req, res) => {
     return res.send("Waiting for transaction to be successful");
   }
 });
-// NEW PAYMENT CODE PAYPAL END
+
+// NEW PAYMENT CODE PAYPAL END ... 
+
+// NEW PAYMENT CODE PAYU STARTS ... 
+
+function generateTransactionID() {
+  const timestamp = Date.now();
+  const randomNum = Math.floor(Math.random() * 1000000);
+  const merchantPrefix = 'T';
+  const transactionID = `${merchantPrefix}${timestamp}${randomNum}`;
+  return transactionID;
+}
+
+app.post("/api/payu/handle-payment", async (req, res) => {
+  let { amount, productinfo } = req.body;
+
+  const { firstName, lastName, email } = req.user;
+  const transactionId = generateTransactionID()
+
+  const data = {
+    key: process.env.PAYU_KEY,
+    salt: process.env.PAYU_SALT,
+    txnid: transactionId,
+    amount: amount,
+    productinfo: productinfo,
+    firstname: firstName + " " + lastName,
+    email: email,
+    surl: 'http://localhost:8888/api/payu/success',
+    furl: 'http://localhost:8888/api/payu/failed',
+    phone: '9112567889'
+  }
+
+  // generate hash 
+  const cryp = crypto.createHash('sha512');
+  // sha512(key|txnid|amount|productinfo|firstname|email|udf1|udf2|udf3|udf4|udf5||||||SALT)
+  const string = data.key + '|' + data.txnid + '|' + data.amount + '|' + data.productinfo + '|' + data.firstname + '|' + data.email + '|||||||||||' + data.salt;
+
+
+  cryp.update(string);
+  const hash = cryp.digest('hex');
+
+  res.render("payment", { hash, ...data });
+});
+
+
+app.post("/api/payu/success", async (req, res) => {
+  console.log("success PAYMENT ..... ")
+
+  console.log("req.body in success :", req.body); 
+  // res.redirect('http://localhost:8888/success')
+  res.render("/"); 
+});
+
+
+app.post("/api/payu/failed", async (req, res) => {
+  console.log("req.body in failed :", req.body); 
+  console.log("FALILED PAYMENT ..... ") 
+  res.send("Transaction failed ..... ")
+});
+
+
+
 
 app.get("/blogs/:urlTitle", (req, res) => {
   Blog.findOne({ urlTitle: req.params.urlTitle }, async (err, blogPost) => {
@@ -1085,7 +1156,7 @@ function generateOTP() {
   return OTP;
 }
 function shuffle(array) {
-  let currentIndex = array.length,
+  let currentIndex = array?.length,
     randomIndex;
   // While there remain elements to shuffle...
   while (currentIndex != 0) {
@@ -1094,8 +1165,8 @@ function shuffle(array) {
     currentIndex--;
     // And swap it with the current element.
     [array[currentIndex], array[randomIndex]] = [
-      array[randomIndex],
-      array[currentIndex],
+      array?.[randomIndex],
+      array?.[currentIndex],
     ];
   }
   return array;

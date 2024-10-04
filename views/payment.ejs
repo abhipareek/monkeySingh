@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting to PayU...</title>
+</head>
+<body>
+    <h1>Redirecting to PayU...</h1>
+    <form id="payuForm" action="https://test.payu.in/_payment" method="POST">
+        <input type="hidden" name="key" value="<%= key %>">
+        <input type="hidden" name="txnid" value="<%= txnid %>">
+        <input type="hidden" name="amount" value="<%= amount %>">
+        <input type="hidden" name="firstname" value="<%= firstname %>">
+        <input type="hidden" name="email" value="<%= email %>">
+        <input type="hidden" name="phone" value="<%= phone %>">
+        <input type="hidden" name="productinfo" value="<%= productinfo %>">
+        <input type="hidden" name="hash" value="<%= hash %>">
+        <input type="hidden" name="surl" value="<%= surl %>">
+        <input type="hidden" name="furl" value="<%= furl %>">
+    </form>
+    <script>
+        // Automatically submit the form
+        document.getElementById('payuForm').submit();
+    </script>
+</body>
+</html>

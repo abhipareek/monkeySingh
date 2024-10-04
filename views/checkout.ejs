@@ -39,6 +39,20 @@
             text-align: center;
         }
 
+        #payu-button-container {
+            width: 135px;
+            background-color: #1CA953;
+            text-align: center;
+            font-weight: 800;
+            margin-bottom: 11px;
+            padding: 11px 11px;
+            color: white;
+            font-size: 12px;
+            display: inline-block;
+            text-decoration: none;
+            border-radius: 3.229px;
+        }
+
         #paypal-button-container .paypal-button-text {
             text-align: center !important;
         }
@@ -67,6 +81,15 @@
                 <p class="my-2">Please do not press the back button untill the process is complete</p>
                 <p> Have a great day! </p>
                 <div class="py-10 text-center">
+                    <div>
+                        <form action="/api/payu/handle-payment" method="post">
+                            <input hidden name="selected_plan" id="" value="<%= selected_plan_id %>">
+                            <input hidden name="amount" id="" value="<%= amount %>">
+                            <input hidden name="productinfo" id="" value="<%= productinfo %>">
+                            <button id="payu-button-container" class="pricing-col-btn tf-button style1">Pay Now</button>
+                        </form>
+                    </div>
+
                     <div id="paypal-button-container"></div>
 
                     <!-- <p id="result-message"></p> -->

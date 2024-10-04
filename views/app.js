@@ -551,6 +551,10 @@ app.get("/checkout", isLoggedIn, async (req, res) => {
   let user = await User.findOne({ email: req.user.email })
   res.render("checkout", { user: user })
 })
+// app.get("/payment", isLoggedIn, async (req, res) => {
+//   let user = await User.findOne({ email: req.user.email })  
+//   res.render("payment", { user: user })
+// })
 app.post("/create-checkout-session", isLoggedIn, (req, res) => {
   selected_plan_id = req.body.plan
   res.redirect("/checkout")
